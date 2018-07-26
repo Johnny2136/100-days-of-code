@@ -6,7 +6,7 @@
 #### Start Date
 July 26th, 2018. [PUT YOUR DATE HERE]
 
-## Additional Rules
+## Additional Rules ( Well, If you are really hard core, me I look at them as guidelines :smile:)
 1. I will tweet about my progress every day -> using the hashtag #100DaysOfCode (sorry I don't tweet... will post to my blog though.)
 2. If I code at work, that time won't count towards the challenge. (If I coded at work I wouldn't need the 100 day challange :boom:)
 3. I will push code to GitHub every day so that anyone can see my progress.(I'm good with this! :thumbsup:)
