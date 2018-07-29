@@ -104,7 +104,7 @@ function forecast(arr) {
 // do not change code below this line
 console.log(forecast(['cold', 'rainy', 'warm', 'sunny', 'cool', 'thunderstorms']));
 ```
-#### or another way of doing it (was the first way i tried it)
+#### Another way of doing it (which was the first way I tried it...)
 ```javascript
 function forecastAlt(arr) {
 // change code below this line
