@@ -104,7 +104,10 @@ function forecast(arr) {
 // do not change code below this line
 console.log(forecast(['cold', 'rainy', 'warm', 'sunny', 'cool', 'thunderstorms']));
 ```
-#### Another way of doing it (which was the first way I tried it...)
+Another way of doing it (This was the first way I tried it)
+
+I had to add debugging statements to find where i was missing the unit test.
+
 ```javascript
 function forecastAlt(arr) {
 // change code below this line
