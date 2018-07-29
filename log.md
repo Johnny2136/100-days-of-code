@@ -184,4 +184,4 @@ console.log(getArrayOfUsers(users2));
 * PassedGenerate an Array of All Object Keys with Object.keys()
 * PassedModify an Array Stored in an Object
 
-All code is in GitHub and repl.it here: [Repl.it](https: //repl.it/@JohnJohnson2/FCCBasicDataStructurs2) or [GitHub](https://github.com/Johnny2136/FCC-Projects/blob/master/FCC_Challenges/BasicDataStructure.js)
+All code is in GitHub and repl.it here: [Repl.it](https://repl.it/@JohnJohnson2/FCCBasicDataStructurs2) or [GitHub](https://github.com/Johnny2136/FCC-Projects/blob/master/FCC_Challenges/BasicDataStructure.js)
