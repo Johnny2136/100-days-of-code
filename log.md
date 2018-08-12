@@ -1,6 +1,6 @@
 # 100 Days Of Code - Log
 
-## Day 19: August, Sunday
+### Day 19: August, Sunday
 
 **Today 's Progress**: I continue work [Intermediate Algorithm Scripting](https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/intermediate-algorithm-scripting).
 
