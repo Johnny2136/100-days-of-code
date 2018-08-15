@@ -1,6 +1,101 @@
 # 100 Days Of Code - Log
 
-### Day 19: August, Sunday
+### Day 21: August 14, Tuesday
+
+**Today 's Progress**: I continue work [Intermediate Algorithm Scripting](https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/intermediate-algorithm-scripting).
+
+**Thoughts**: Don't have much time tonight, only worked through two challenges. I started a third but didn't finish it.
+
+```javascript
+console.log("Convert HTML Entities");
+//Convert the characters &, <, >, " (double quote), and ' (apostrophe), in a string to their corresponding HTML entities. (You got to be kidding me!!!)
+ function convertHTML(str) {
+      const htmlEnt={
+        '&':'&amp;',
+        '<':'&lt;',
+        '>':'&gt;',
+        '\"':'&quot;',
+        '\'':"&apos;"
+      };
+  return str.split('').map(function(ojbect){//Use Split and map function to filter str.
+        return htmlEnt[ojbect] || ojbect;
+      }).join('');//Use .join prototype
+  };  
+//test here
+console.log(convertHTML("Dolce & Gabbana")); //should return Dolce &​amp; Gabbana.
+console.log(convertHTML("Hamburgers < Pizza < Tacos")); //should return Hamburgers &​lt; Pizza &​lt; Tacos.
+console.log(convertHTML("Sixty > twelve")); //should return Sixty &​gt; twelve.
+console.log(convertHTML('Stuff in "quotation marks"')); //should return Stuff in &​quot;quotation marks&​quot;.
+console.log(convertHTML("Schindler's List")); //should return Schindler&​apos;s List.
+console.log(convertHTML("<>")); //should return &​lt;&​gt;.
+console.log(convertHTML("abc")); //should return abc.
+console.log("<----------------------next exercise------------------------->");
+```
+This one used elements from previous Challenges.
+
+**Link(s) to work**
+
+1. Started [Intermediate Algorithm Scripting](https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/intermediate-algorithm-scripting).
+
+**Introduction to the Functional Programming Challenges**
+
+* PassedSorted Union
+* PassedConvert HTML Entities
+All code is in GitHub and repl.it here: [repl.it IntermediateAlgorithmScripting.js](https://repl.it/@JohnJohnson2/IntermediateAlgorithmScriptingjs) or [GitHub IntermediateAlgorithmScripting.js](https://github.com/Johnny2136/FCC-Projects/blob/master/FCC_Challenges/IntermediateAlgorithmScripting.js)
+
+## Day 20: August 13, Monday
+
+**Today 's Progress**: I continue work [Intermediate Algorithm Scripting](https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/intermediate-algorithm-scripting).
+
+**Thoughts**: I need to find out why its so hard to do these Challenges, again today I spent hours trying to get something I thought should work to actually work. I used to think I was pretty good at coming up with logical algorithms for solving problems but I am really struggling nothing seems to work, maybe there are too many options `for` vice `map` and the concept of `callbacks` is hard for me to grasp, I will keep trying, maybe it will get easier with practice.
+
+```javascript
+console.log("Pig Latin");
+//Translate the provided string to pig latin. Pig Latin takes the first consonant (or consonant cluster) of an English word, moves it to the end of the word and suffixes an "ay". If a word begins with a vowel you just add "way" to the end. Input strings are guaranteed to be English words in all lowercase.
+function translatePigLatin(str) {
+  var pigLatin = '';
+  var RegExp = /[aeiou]/gi;
+  if (str[0].match(RegExp)) {
+    pigLatin = str + 'way';
+    //console.log('Test 1st letter is a aeiou');
+  } else if(str.match(RegExp) === null) {//added to get last test to pass.
+    pigLatin = str + 'ay';
+    //console.log('Test there are only consonants');
+  } else {
+    var vowelIndex = str.indexOf(str.match(RegExp)[0]);
+    //console.log(vowelIndex = str.indexOf(str.match(RegExp)[0]));
+    pigLatin = str.substr(vowelIndex) + str.substr(0, vowelIndex) + 'ay';
+  }  
+  console.log(pigLatin);
+  return pigLatin;
+}
+translatePigLatin("consonant");// should return "onsonantcay
+translatePigLatin("california");// should return "aliforniacay".
+translatePigLatin("paragraphs");// should return "aragraphspay".
+translatePigLatin("glove");// should return "oveglay".
+translatePigLatin("algorithm");// should return "algorithmway".
+translatePigLatin("eight");// should return "eightway".
+translatePigLatin("myclm");// should return "eightway".
+translatePigLatin("shmmnd");// should return "eightway".
+console.log("<----------------------next exercise------------------------->");
+```
+This one seemed at first pretty straight forward but I couldn't get the last test to pass. I finally looked at the hints and saw I wasn't checking for consonants, I finally got it to work... [String.prototype.match()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match), [w3schools.com](https://www.w3schools.com/js/js_regexp.asp) and [Regular Expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions).
+
+**Link(s) to work**
+
+1. Started [Intermediate Algorithm Scripting](https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/intermediate-algorithm-scripting).
+
+**Introduction to the Functional Programming Challenges**
+
+* PassedPig Latin
+* PassedSearch and Replace
+* PassedDNA Pairing
+* PassedMissing letters
+
+All code is in GitHub and repl.it here: [repl.it IntermediateAlgorithmScripting.js](https://repl.it/@JohnJohnson2/IntermediateAlgorithmScriptingjs) or [GitHub IntermediateAlgorithmScripting.js](https://github.com/Johnny2136/FCC-Projects/blob/master/FCC_Challenges/IntermediateAlgorithmScripting.js)
+
+
+### Day 19: August 12, Sunday
 
 **Today 's Progress**: I continue work [Intermediate Algorithm Scripting](https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/intermediate-algorithm-scripting).
 
@@ -38,7 +133,7 @@ This one hours finally I gave up and searched for a solution and even that neede
 All code is in GitHub and repl.it here: [repl.it IntermediateAlgorithmScripting.js](https://repl.it/@JohnJohnson2/IntermediateAlgorithmScriptingjs) or [GitHub IntermediateAlgorithmScripting.js](https://github.com/Johnny2136/FCC-Projects/blob/master/FCC_Challenges/IntermediateAlgorithmScripting.js)
 
 
-### Day 18: August, Saturday
+### Day 18: August 11, Saturday
 
 **Today 's Progress**: I started work [Intermediate Algorithm Scripting](https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/intermediate-algorithm-scripting).
 
@@ -79,7 +174,7 @@ This one took some google searching and trying to figure out how to get `Array.f
 
 All code is in GitHub and repl.it here: [repl.it IntermediateAlgorithmScripting.js](https://repl.it/@JohnJohnson2/IntermediateAlgorithmScriptingjs) or [GitHub IntermediateAlgorithmScripting.js](https://github.com/Johnny2136/FCC-Projects/blob/master/FCC_Challenges/IntermediateAlgorithmScripting.js)
 
-### Day 17: August, Friday
+### Day 17: August 10, Friday
 
 **Today 's Progress**: I finished work [Functional Programming Challenges](https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/functional-programming).
 
@@ -155,7 +250,7 @@ This one took a few google searched and trying to figure out `split, filter, joi
 All code is in GitHub and repl.it here: [repl.it FuncProg](https://repl.it/@JohnJohnson2/FCC-FunctionalProgrammingChallenges) or [GitHub FuncProg](https://github.com/Johnny2136/FCC-Projects/blob/master/FCC_Challenges/FunctionalProgramming.js)
 
 
-### Day 16: August, Thursday
+### Day 16: August 09, Thursday
 
 **Today 's Progress**: I continue to work [Functional Programming Challenges](https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/functional-programming).
 
@@ -199,7 +294,7 @@ This one took a few google searched and trying to figure out `concat`... [Array.
 All code is in GitHub and repl.it here: [repl.it FuncProg](https://repl.it/@JohnJohnson2/FCC-FunctionalProgrammingChallenges) or [GitHub FuncProg](https://github.com/Johnny2136/FCC-Projects/blob/master/FCC_Challenges/FunctionalProgramming.js)
 
 
-### Day 15: August, Wednesday
+### Day 15: August 08, Wednesday
 
 **Today 's Progress**: I continue to work [Functional Programming Challenges](https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/functional-programming).
 
@@ -247,7 +342,7 @@ This one took a few google searched and trying to figure out `forEach` in conjun
 All code is in GitHub and repl.it here: [repl.it FuncProg](https://repl.it/@JohnJohnson2/FCC-FunctionalProgrammingChallenges) or [GitHub FuncProg](https://github.com/Johnny2136/FCC-Projects/blob/master/FCC_Challenges/FunctionalProgramming.js)
 
 
-### Day 14: August, Tuesday
+### Day 14: August 07, Tuesday
 
 **Today 's Progress**: I finished the challenges in  [Object Oriented Programming](https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/object-oriented-programming) section and started [Functional Programming Challenges](https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/functional-programming).
 
@@ -302,7 +397,7 @@ This one took a few google searched and trying to figure out callback...
 
 All code is in GitHub and repl.it here: [Repl.it OOP](https://repl.it/@JohnJohnson2/FCCObjectOrientedProgramming), [repl.it FuncProg](https://repl.it/@JohnJohnson2/FCC-FunctionalProgrammingChallenges) or [GitHub OOP](https://github.com/Johnny2136/FCC-Projects/blob/master/FCC_Challenges/FCC_Challenges/ObjectOrientedProgramming.js), [GitHub FuncProg](https://github.com/Johnny2136/FCC-Projects/blob/master/FCC_Challenges/FunctionalProgramming.js)
 
-### Day 13: August, Monday
+### Day 13: August 06, Monday
 
 **Today 's Progress**: I worked on the challenges in  [Object Oriented Programming](https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/object-oriented-programming) section.
 
@@ -376,7 +471,7 @@ console.log("--------------------------------------------");
 
 All code is in GitHub and repl.it here: [Repl.it](https://repl.it/@JohnJohnson2/FCCObjectOrientedProgramming) or [GitHub](https://github.com/Johnny2136/FCC-Projects/blob/master/FCC_Challenges/FCC_Challenges/ObjectOrientedProgramming.js)
 
-### Day 12: August, Sunday
+### Day 12: August 05, Sunday
 
 **Today 's Progress**: I worked on the challenges in  [Object Oriented Programming](https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/object-oriented-programming) section.
 
@@ -415,7 +510,7 @@ console.log("--------------------------------------------");
 
 All code is in GitHub and repl.it here: [Repl.it](https://repl.it/@JohnJohnson2/FCCObjectOrientedProgramming) or [GitHub](https://github.com/Johnny2136/FCC-Projects/blob/master/FCC_Challenges/FCC_Challenges/ObjectOrientedProgramming.js)
 
-## Day 11: August, Saturday
+## Day 11: August 04, Saturday
 
 **Today 's Progress**: I finished the challenges in [Introduction to Basic Algorithm Scripting](https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-algorithm-scripting) and started the [Object Oriented Programming](https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/object-oriented-programming) section.
 
@@ -455,7 +550,7 @@ console.log("--------------------------------------------------");
 
 All code is in GitHub and repl.it here: [Repl.it](https://repl.it/@JohnJohnson2/FCCObjectOrientedProgramming) or [GitHub](https://github.com/Johnny2136/FCC-Projects/blob/master/FCC_Challenges/FCC_Challenges/ObjectOrientedProgramming.js)
 
-### Day 10: August, Friday
+### Day 10: August 03, Friday
 
 **Today 's Progress**: I continued working the challenges in [Introduction to Basic Algorithm Scripting](https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-algorithm-scripting) I coded for 1.5 hours.
 
@@ -490,7 +585,7 @@ console.log("--------------------------------------------------");
 * PassedMutations
 All code is in GitHub and repl.it here: [Repl.it](https://repl.it/@JohnJohnson2/BasicAlgorithmScripting) or [GitHub](https://github.com/Johnny2136/FCC-Projects/blob/master/FCC_Challenges/BasicAlgorithmScripting.js)
 
-### Day 9: August, Thursday
+### Day 9: August 02, Thursday
 
 **Today 's Progress**: I continued working the challenges in [Introduction to Basic Algorithm Scripting](https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-algorithm-scripting) I coded for 1.5 hours.
 
@@ -523,7 +618,7 @@ console.log("--------------------------------------------------");
 
 All code is in GitHub and repl.it here: [Repl.it](https://repl.it/@JohnJohnson2/BasicAlgorithmScripting) or [GitHub](https://github.com/Johnny2136/FCC-Projects/blob/master/FCC_Challenges/BasicAlgorithmScripting.js)
 
-### Day 8: August, Wednesday
+### Day 8: August 01, Wednesday
 
 **Today 's Progress**: I continued working the challanges in [Introduction to Basic Algorithm Scripting](https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-algorithm-scripting) I coded for 1.5 hours.
 
