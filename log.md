@@ -23,7 +23,7 @@ You can use any mix of HTML, JavaScript, CSS, Bootstrap, SASS, React, Redux, and
 - [X] User Story #1: I can see an element with id="break-label" that contains a string (e.g. "Break Length").
 - [X] User Story #2: I can see an element with id="session-label" that contains a string (e.g. "Session Length").
 - [X] User Story #3: I can see two clickable elements with corresponding IDs: id="break-decrement" and id="session-decrement".
-**- [ ] User Story #4: I can see two clickable elements with corresponding IDs: id="break-increment" and id="session-increment".**
+- [ ] **User Story #4: I can see two clickable elements with corresponding IDs: id="break-increment" and id="session-increment".**
 - [ ] User Story #5: I can see an element with a corresponding id="break-length", which by default (on load) displays a value of 5.
 - [ ] User Story #6: I can see an element with a corresponding id="session-length", which by default displays a value of 25.
 - [ ] User Story #7: I can see an element with a corresponding id="timer-label", that contains a string indicating a session is initialized (e.g. "Session").
