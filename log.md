@@ -3,13 +3,13 @@
 
 ![Sunday](https://discourse-user-assets.s3.amazonaws.com/original/3X/1/3/13f966666ac2e06ae8cd3f7cfda01641494e0946.png)
 
-## Day 61: September 23, Sunday
+### Day 61: September 23, Sunday
 
 **Today 's Progress**: Started lessons on [Introduction to the Data Visualization with D3 Challenges](https://learn.freecodecamp.org/data-visualization/data-visualization-with-d3).
 
 **Thoughts**: Started the D3.js lessons and Challenges, I feel there is some content missing from `#freeCodeCamp` On a positive note so far most of examples are pretty good.
 
-### Resources used:
+#### Resources used:
   * [JSFiddle](https://jsfiddle.net/johnny2136/1pLubnqc/)
   * [REPL.IT](https://repl.it/@JohnJohnson2/FCCD3)
   * [GitHub_FCC_Repo](https://github.com/Johnny2136/FCC-Projects/blob/master/FCC_Challenges/DataVisualizationWithD3.md)
@@ -17,7 +17,7 @@
   * [D3 Tutorial](https://www.dashingd3js.com/table-of-contents)
   * [D3 in Depth](https://d3indepth.com/)
 
-  ## Add Document Elements with D3
+  #### Add Document Elements with D3
 
   **The Lesson:**
   D3 has several methods that let you add and change elements in your document.
@@ -60,7 +60,7 @@
   ```
 
 
-  ## Select a Group of Elements with D3
+  #### Select a Group of Elements with D3
 
   **The Lesson:**
   D3 also has the `selectAll()` method to select a group of elements. It returns an array of HTML nodes for all the items in the document that match the input string. Here's an example to select all the anchor tags in a document:
@@ -106,7 +106,7 @@
   ```
 
 
-  ## Work with Data in D3
+  #### Work with Data in D3
 
   **The Lesson:**
   The D3 library focuses on a data-driven approach. When you have a set of data, you can apply D3 methods to display it on the page. Data comes in many formats, but this challenge uses a simple array of numbers.
@@ -157,7 +157,7 @@
   ```
 
 
-  ## Work with Dynamic Data in D3
+  #### Work with Dynamic Data in D3
 
   **The Lesson:**
   The last two challenges cover the basics of displaying data dynamically with D3 using the `data()` and `enter()` methods. These methods take a data set and, together with the `append()` method, create a new DOM element for each entry in the data set.
@@ -194,7 +194,7 @@
   ```
 
 
-  ## Add Inline Styling to Elements
+  #### Add Inline Styling to Elements
 
   **The Lesson:**
   D3 lets you add inline CSS styles on dynamic elements with the style() method.
@@ -246,7 +246,7 @@ All code is in GitHub [FCC_Challenges/DataVisualizationWithD3.md](https://github
 
 ![Saturday](https://i.imgur.com/dnekHhQ.jpg)
 
-## Day 60: September 22, Saturday
+### Day 60: September 22, Saturday
 
 **Today 's Progress**: Finally finished the [Introduction to the Front End Libraries Projects](https://learn.freecodecamp.org/front-end-libraries/front-end-libraries-projects).
 
