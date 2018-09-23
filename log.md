@@ -234,11 +234,11 @@
 
 **Introduction to the Data Visualization with D3 Challenges**
 
- -[x] Add Document Elements with D3
- -[x] Select a Group of Elements with D3
- -[x] Work with Data in D3
- -[x] Work with Dynamic Data in D3
- -[x] Add Inline Styling to Elements
+ - [x] Add Document Elements with D3
+ - [x] Select a Group of Elements with D3
+ - [x] Work with Data in D3
+ - [x] Work with Dynamic Data in D3
+ - [x] Add Inline Styling to Elements
 
 All code is in GitHub [FCC_Challenges/DataVisualizationWithD3.md](https://github.com/Johnny2136/FCC-Projects/edit/master/FCC_Challenges/DataVisualizationWithD3.md).
 
