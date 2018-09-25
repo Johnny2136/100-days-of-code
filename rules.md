@@ -4,14 +4,14 @@
 ### *I will code for at least an hour every day for the next 100 days.*
 
 #### Start Date
-July 26th, 2018. [PUT YOUR DATE HERE]
+July 25th, 2018. [July 25th, 2018]
 
 ## Additional Rules ( Well, If you are really hard core, me I look at them as guidelines :smile:)
-1. I will tweet about my progress every day -> using the hashtag #100DaysOfCode (sorry I don't tweet... will post to my blog though.)
+1. I will tweet about my progress every day -> using the hashtag #100DaysOfCode (sorry I don't tweet OK I'll Tweet!... and post to my blog everyday.)
 2. If I code at work, that time won't count towards the challenge. (If I coded at work I wouldn't need the 100 day challange :boom:)
 3. I will push code to GitHub every day so that anyone can see my progress.(I'm good with this! :thumbsup:)
 4. I will update the (Log)[log.md] with the day's progress and provide a link so that others can see my progress. (I'm good with this :thumbsup:)
-5. I will work on real projects, facing real challenges. The time spent doing tutorials, online courses and other similar resources will NOT count towards this challenge. (If you've just started learning to code, read [FAQ](FAQ.md)) (Ok WOAH! :Stop: Coding is coding in my book, and some of those exercises are real problems!)
+5. I will work on real projects, facing real challenges. The time spent doing tutorials, online courses and other similar resources will NOT count towards this challenge. (If you've just started learning to code, read [FAQ](FAQ.md)) (Ok WOAH! :Stop: Coding is coding in my book, and some of those exercises are real problems! also the projects are killers, one React.js one took several days!)
 
 ## Ideas to make this challenge more effective
 1. To increase the chances of success, it's a requirement that you add a link to each of the day posts in the [log](log.md). It can be a link to a commit on GitHub, a link to a blog post :thumbsup:
