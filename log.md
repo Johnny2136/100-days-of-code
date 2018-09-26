@@ -1,8 +1,5 @@
 # 100 Days Of Code - Log
 
-layout: post
-title: Day 63 of 100 Days Of Code
----
 
 ### Day 63: September 25, Tuesday
 
