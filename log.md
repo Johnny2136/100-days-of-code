@@ -1,5 +1,103 @@
 # 100 Days Of Code - Log
 
+### Day 65: September 27, Wednesday
+
+**Today 's Progress**: Did the next lesson on [Learn Vue.js for free](https://scrimba.com/g/glearnvue).
+
+**Thoughts**: Working on local development of Vue.js so set up the lesson tutorial in Gitlab to clone locally worked through the methods video tutorial for learning Vue. [ScribaConsol](https://scrimba.com/p/pZ45Hz/c6bL6Uy)
+
+### Resources used:
+  * [JSFiddle](https://jsfiddle.net/johnny2136/br7qzL1t/)
+  * [Vue in CodeSandbox](https://codesandbox.io/s/vue)
+  * [Repl.it Vue project](https://repl.it/@JohnJohnson2/NarrowProductiveMonads)
+  * [Learn Vue.js for free](https://scrimba.com/g/glearnvue)
+
+```HTML
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdn.rawgit.com/jgthms/minireset.css/master/minireset.css">
+		<link rel="stylesheet" href="css/debug.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900">
+		<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+		<style>
+
+:root {
+	font: 1rem/1.175 "BlinkMacSystemFont", -apple-system, "Roboto", sans-serif;
+}
+
+#app {
+	display: flex;
+	justify-content: center; align-items: center;
+	width: 100vw; height: 100vh;
+	font-weight: 900; font-size: 8rem;
+	color: hsl(0, 0%, 100%);
+	background: hsl(240, 100%, 67%);
+	user-select: none;
+}
+
+img {
+	width: 8rem; height: 8rem;
+	vertical-align: calc(-0.12109375em);
+}
+
+		</style>
+	</head>
+	<body>
+
+		<div id="app">
+			<p>{{  }}</p>
+		</div>
+
+		<script>
+
+"use strict"
+
+// emojify returns the corresponding emoji image
+function emojify(name) {
+	var out = `<img src="emojis/` + name + `.png">`
+	return out
+}
+
+// cast returns a spell (function) that decorates the wizard
+function cast(emoji) {
+    if (!emoji) {
+        emoji = "¯\\_(ツ)_/¯"
+    }
+	return function (wizard) {
+		return emoji + wizard + emoji
+	}
+}
+
+var app = new Vue({
+	el: "#app",
+	data: {
+		wizard: emojify("wizard")
+	},
+    methods: {
+        lumos: cast(emojify("lumos")),
+        incendio: cast(emojify("incendio"))
+    }
+})
+
+		</script>
+
+	</body>
+</html>
+```
+
+
+**Link(s) to work**
+
+1. Started work on [Introduction to Vue.js](https://scrimba.com/c/c6bL6Uy).
+
+**Introduction to Vue.js**
+Worked through first three videos https://scrimba.com/p/pZ45Hz/cyLQNAM
+
+All code is Scriba [https://scrimba.com/@Johnny2136](https://scrimba.com/@Johnny2136).
+
 ![humpday](https://image.spreadshirtmedia.com/image-server/v1/compositions/108410594/views/1,width=650,height=650,appearanceId=6,version=1486019171/.jpg)
 
 ### Day 64: September 26, Wednesday
