@@ -1,6 +1,6 @@
 # 100 Days Of Code - Log
 
-### Day 65: September 27, Wednesday
+### Day 65: September 27, Thursday
 
 **Today 's Progress**: Did the next lesson on [Learn Vue.js for free](https://scrimba.com/g/glearnvue).
 
