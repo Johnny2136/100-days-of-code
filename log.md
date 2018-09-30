@@ -5,7 +5,7 @@
 
 ### Day 68: September 30, Sunday
 
-**Today 's Progress**: Gave up on Docker I have to have windows 10 pro and I do not have pro. So fell back 10 yards and punted. So onn with learning bu tutorials I am working through [INTERMEDIATE: Learn Vue 2: Step By Step](https://laracasts.com/series/learn-vue-2-step-by-step)and [VUE.JS - SIMPLE TODO APP - PART 1](http://iamkumaran.github.io/vue-js/vue-js-todo-app-part-1.html).
+**Today 's Progress**: Gave up on Docker I have to have windows 10 pro and I do not have pro. So fell back 10 yards and punted. So on with learning by tutorials I am working through [INTERMEDIATE: Learn Vue 2: Step By Step](https://laracasts.com/series/learn-vue-2-step-by-step)and [VUE.JS - SIMPLE TODO APP - PART 1](http://iamkumaran.github.io/vue-js/vue-js-todo-app-part-1.html).
 
 **Thoughts**: Following these I am tring to add fetures and update my first todo list here[VueApp](https://jsfiddle.net/johnny2136/br7qzL1t/2/) after going though the videos I came up with this[VueJS_ToDoList](https://jsfiddle.net/johnny2136/g72evm4L/)
 
