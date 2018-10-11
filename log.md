@@ -1,6 +1,61 @@
 # 100 Days Of Code - Log
 
 
+![Wednesday](https://raw.githubusercontent.com/Johnny2136/johnny2136.github.io/master/images/Vuetify%20day78.png)
+
+## Day 78: October 10, Wednesday
+
+**Today 's Progress**: Doing a little exploration into Vuetify for Vue.JS
+
+**Thoughts**: I watched this [Three Vue.js Vuetify Tips (Grid System, Buttons, Alerts)](https://www.youtube.com/watch?v=FpnvRNkQTY4) and started looking at Vuetify.
+
+### Resources used:
+  * [Vuetify](https://vuetifyjs.com/en/getting-started/quick-start)
+  * [Vue.js.org](https://vuejs.org/)
+
+```Html
+<!DOCTYPE html>
+<html>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+</head>
+<body>
+  <div id="app">
+    <v-app>
+      <v-content>
+        <v-container><h1>{{hello}}</h1></v-container>
+      </v-content>
+    </v-app>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.js"></script>
+  <script>
+    new Vue({
+        el: '#app',
+        data(){
+            return {
+                hello:"Hello World!"
+            }
+        }
+    })
+  </script>
+</body>
+</html>
+```
+A little light coding.
+
+
+**Link(s) to work**
+
+1. Working on learning vuetifyjs application in local environment.
+
+Code is at local not yet in github.
+
+
+
 ![Tuesday](http://obrienspubsbrandon.com/wp-content/uploads/2018/07/Taco-Tuesday.jpg)
 
 ## Day 77: October 09, Tuesday
