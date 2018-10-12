@@ -1,6 +1,130 @@
 # 100 Days Of Code - Log
 
 
+![Thursday](https://raw.githubusercontent.com/Johnny2136/johnny2136.github.io/master/images/Vuetify%20day%2079.png)
+
+### Day 79: October 11, Thursday
+
+**Today 's Progress**: Created a Form in Vuetify for Vue.JS
+
+**Thoughts**: I had oral surgery today! I did not want to code but after 78 days of straight coding I had to try Vuetify seems pretty cool.
+
+### Resources used:
+  * [Vuetify](https://vuetifyjs.com/en/getting-started/quick-start)
+  * [Vue.js.org](https://vuejs.org/)
+
+```Html
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+</head>
+<body>
+  <div id="app">
+  <v-container grid-list-md text-xs-center>
+    <v-app id="inspire">
+      <v-form ref="form" v-model="valid" lazy-validation>
+        <v-text-field
+          v-model="name"
+          :rules="nameRules"
+          :counter="10"
+          label="Name"
+          required
+        ></v-text-field>
+        <v-text-field
+          v-model="email"
+          :rules="emailRules"
+          label="E-mail"
+          required
+        ></v-text-field>
+        <v-select
+          v-model="select"
+          :items="items"
+          :rules="[v => !!v || 'Item is required']"
+          label="Item"
+          required
+        ></v-select>
+        <v-checkbox
+          v-model="checkbox"
+          :rules="[v => !!v || 'You must agree to continue!']"
+          label="Do you agree?"
+          required
+        ></v-checkbox>
+
+        <v-btn
+          :disabled="!valid"
+          @click="submit"
+        >
+          submit
+        </v-btn>
+        <v-btn @click="clear">clear</v-btn>
+      </v-form>
+    </v-app>
+    </v-container>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/babel-polyfill/dist/polyfill.min.js"></script>
+  <script>
+  new Vue({
+  el: '#app',
+  data: () => ({
+    valid: true,
+    name: '',
+    nameRules: [
+      v => !!v || 'Name is required',
+      v => (v && v.length <= 25) || 'Name must be less than 25 characters'
+    ],
+    email: '',
+    emailRules: [
+      v => !!v || 'E-mail is required',
+      v => /.+@.+/.test(v) || 'E-mail must be valid'
+    ],
+    select: null,
+    items: [
+      'Could not access Page',
+      'User experiance Good',
+      'User experiance Bad',
+      'User experiance Ugly'
+    ],
+    checkbox: false
+  }),
+
+  methods: {
+    submit () {
+      if (this.$refs.form.validate()) {
+        // Native form submission is not yet supported
+        axios.post('/api/submit', {
+          name: this.name,
+          email: this.email,
+          select: this.select,
+          checkbox: this.checkbox
+        })
+      }
+    },
+    clear () {
+      this.$refs.form.reset()
+    }
+  }
+})
+  </script>
+</body>
+</html>
+```
+A little light coding in incredible pain!.
+
+
+**Link(s) to work**
+
+1. Working on learning vuetifyjs application in local environment.
+
+Code is at local not yet in github.
+
+
+
 ![Wednesday](https://raw.githubusercontent.com/Johnny2136/johnny2136.github.io/master/images/Vuetify%20day78.png)
 
 ## Day 78: October 10, Wednesday
