@@ -1,6 +1,53 @@
 # 100 Days Of Code - Log
 
 
+![Friday](https://raw.githubusercontent.com/Johnny2136/johnny2136.github.io/master/images/TDD%20Day%201.png)
+
+### Day 80: October 12, Friday
+
+**Today 's Progress**: Started trying to work though TDD of Vue.js
+
+**Thoughts**: Recovering from oral surgery today! I did not feel like coding but after 79 days of straight coding I had to try TDD seems pretty complicated.
+
+### Resources used:
+  * [TEST FIRST DEVELOPMENT WITH VUE.JS, QUASAR, AND JEST-CUCUMBER](https://blog.zanclus.com/2018/10/test-first-development-with-vuejs.html)
+  * [Vue.js.org](https://vuejs.org/)
+  * [Vue-projects repo in github](https://github.com/Johnny2136/vuetify-projects)
+
+```bash
+Starting selenium server... There was an error while starting the Selenium server:
+
+Error: could not find java.dll
+Error: Could not find Java SE Runtime Environment.
+
+ ERROR  Error: Command failed: D:\johnny\GitHub\vuetify-projects\tdd-vue\node_modules\nightwatch\bin\nightwatch --config D:\johnny\GitHub\vuetify-projects\tdd-vue\node_modules\@vue\cli-plugin-e2e-nightwatch\nightwatch.config.js --env chrome
+Error: Command failed: D:\johnny\GitHub\vuetify-projects\tdd-vue\node_modules\nightwatch\bin\nightwatch --config D:\johnny\GitHub\vuetify-projects\tdd-vue\node_modules\@vue\cli-plugin-e2e-nightwatch\nightwatch.config.js --env chrome
+    at makeError (D:\johnny\GitHub\vuetify-projects\tdd-vue\node_modules\execa\index.js:172:9)
+    at Promise.all.then.arr (D:\johnny\GitHub\vuetify-projects\tdd-vue\node_modules\execa\index.js:277:16)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! vue-tdd@0.1.0 test:e2e: "vue-cli-service test:e2e"
+npm ERR! Exit status 1
+npm ERR!
+npm ERR! Failed at the vue-tdd@0.1.0 test:e2e script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\johnn\AppData\Roaming\npm-cache\_logs\2018-10-13T00_36_23_550Z-debug.log
+
+```
+Trying to get my mind wrapped around TDD in VUE!.
+
+
+**Link(s) to work**
+
+1. Working on learning VUE-TDD application.
+
+Code is at [Vue-projects repo in github](https://github.com/Johnny2136/vuetify-projects).
+
+
+
 ![Thursday](https://raw.githubusercontent.com/Johnny2136/johnny2136.github.io/master/images/Vuetify%20day%2079.png)
 
 ### Day 79: October 11, Thursday
