@@ -1,6 +1,51 @@
 # 100 Days Of Code - Log
 
 
+![Saturday](https://raw.githubusercontent.com/Johnny2136/johnny2136.github.io/master/images/TDD%20Day%202.png)
+
+### Day 81: October 13, Saturday
+
+**Today 's Progress**: Continuing my work though TDD of Vue.js
+
+**Thoughts**: Recovering from oral surgery day 3! I did not feel like coding but after 80 days of straight coding I had to try. TDD is pretty complicated for me the examples for VUE 3.0 are few and far between.
+
+### Resources used:
+  * [Vue Test Utils](https://vue-test-utils.vuejs.org/guides/getting-started.html)
+  * [Vue.js.org](https://vuejs.org/)
+  * [Vue-projects repo in github](https://github.com/Johnny2136/vuetify-projects)
+
+```bash
+johnn@DESKTOP-Johnny5 MINGW64 ~/vue-test-utils-getting-started (master)
+$ npm test
+
+> vue-test-utils-getting-started@1.0.0 test C:\Users\johnn\vue-test-utils-getting-started
+> jest
+
+ PASS  .\test.js
+  Counter
+    √ renders the correct markup (4ms)
+    √ has a button (6ms)
+    √ button should increment the count (3ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       3 passed, 3 total
+Snapshots:   0 total
+Time:        1.458s
+Ran all test suites.
+
+johnn@DESKTOP-Johnny5 MINGW64 ~/vue-test-utils-getting-started (master)
+```
+Trying to get my mind wrapped around TDD in VUE!.
+
+
+**Link(s) to work**
+
+1. Working on learning VUE-TDD application.
+
+Code is at [Vue-projects repo in github](https://github.com/Johnny2136/vuetify-projects).
+
+
+
 ![Friday](https://raw.githubusercontent.com/Johnny2136/johnny2136.github.io/master/images/TDD%20Day%201.png)
 
 ### Day 80: October 12, Friday
