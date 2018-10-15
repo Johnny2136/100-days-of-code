@@ -1,5 +1,54 @@
 # 100 Days Of Code - Log
 
+### Day 82: October 14, Sunday
+
+**Today 's Progress**: Continuing my work though TDD of Vue.js
+
+**Thoughts**: TDD is pretty complicated for me the examples for VUE 3.0 are few and far between most tutorials are in VUE 2.0.
+
+### Resources used:
+  * [Vue Test Utils](https://vue-test-utils.vuejs.org/guides/getting-started.html)
+  * [Vue.js.org](https://vuejs.org/)
+  * [Vue-projects repo in github](https://github.com/Johnny2136/vuetify-projects)
+
+```js
+// Import the mount() method from the test utils
+// and the component you want to test
+/*jshint esversion: 6 */
+import { mount } from '@vue/test-utils';
+import Counter from './counter';
+
+
+describe('Counter', () => {
+  // Now mount the component and you have the wrapper
+  const wrapper = mount(Counter);
+
+  it('renders the correct markup', () => {
+    expect(wrapper.html()).toContain('<span class="count">0</span>');
+  });
+
+  // it's also easy to check for the existence of elements
+  it('has a button', () => {
+    expect(wrapper.contains('button')).toBe(true);
+  });
+
+  it('button should increment the count', () => {
+    expect(wrapper.vm.count).toBe(0);
+    const button = wrapper.find('button');
+    button.trigger('click');
+    expect(wrapper.vm.count).toBe(1);
+  });
+});
+```
+Trying to get my mind wrapped around TDD in VUE! Its really hard.
+
+
+**Link(s) to work**
+
+1. Working on learning VUE-TDD application.
+
+Code is at [Vue-projects repo in github](https://github.com/Johnny2136/vuetify-projects).
+
 
 ![Saturday](https://raw.githubusercontent.com/Johnny2136/johnny2136.github.io/master/images/TDD%20Day%202.png)
 
