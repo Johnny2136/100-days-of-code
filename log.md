@@ -1,5 +1,248 @@
 # 100 Days Of Code - Log
 
+### Day 83: October 15, Monday
+
+**Today 's Progress**: Continuing my work though TDD of Vue.js 3.0.
+
+**Thoughts**: TDD is extremely complicated for me the examples for VUE 3.0 are few and far between most tutorials are in VUE 2.0. After much troubleshooting, my environment is messed up!!!
+
+### Resources used:
+  * [TEST FIRST DEVELOPMENT WITH VUE.JS, QUASAR, AND JEST-CUCUMBER](https://blog.zanclus.com/2018/10/test-first-development-with-vuejs.html)]
+  * [Vue Test Utils](https://vue-test-utils.vuejs.org/guides/getting-started.html)
+  * [Vue.js.org](https://vuejs.org/)
+  * [Vue-projects repo in github](https://github.com/Johnny2136/vuetify-projects)
+
+```shell
+C:\Users\johnn> vue create newapp
+
+Vue CLI v3.0.5
+? Please pick a preset: Manually select features
+? Check the features needed for your project: Babel, PWA, Router, CSS Pre-processors, Linter, Unit, E2E
+? Use history mode for router? (Requires proper server setup for index fallback in production) Yes
+? Pick a CSS pre-processor (PostCSS, Autoprefixer and CSS Modules are supported by default): Sass/SCSS
+? Pick a linter / formatter config: Prettier
+? Pick additional lint features: Lint on save
+? Pick a unit testing solution: Jest
+? Pick a E2E testing solution: Nightwatch
+? Where do you prefer placing config for Babel, PostCSS, ESLint, etc.? In dedicated config files
+? Save this as a preset for future projects? No
+
+Vue CLI v3.0.5
+✨  Creating project in C:\Users\johnn\newapp.
+🗃  Initializing git repository...
+⚙  Installing CLI plugins. This might take a while...
+
+C:\Users\johnn\newapp\acorn -> C:\Users\johnn\newapp\node_modules\acorn\bin\acorn
+C:\Users\johnn\newapp\ansi-html -> C:\Users\johnn\newapp\node_modules\ansi-html\bin\ansi-html
+C:\Users\johnn\newapp\atob -> C:\Users\johnn\newapp\node_modules\atob\bin\atob.js
+C:\Users\johnn\newapp\babylon -> C:\Users\johnn\newapp\node_modules\babylon\bin\babylon.js
+C:\Users\johnn\newapp\cssesc -> C:\Users\johnn\newapp\node_modules\cssesc\bin\cssesc
+C:\Users\johnn\newapp\browserslist -> C:\Users\johnn\newapp\node_modules\browserslist\cli.js
+C:\Users\johnn\newapp\esparse -> C:\Users\johnn\newapp\node_modules\esprima\bin\esparse.js
+C:\Users\johnn\newapp\esvalidate -> C:\Users\johnn\newapp\node_modules\esprima\bin\esvalidate.js
+C:\Users\johnn\newapp\he -> C:\Users\johnn\newapp\node_modules\he\bin\he
+C:\Users\johnn\newapp\is-ci -> C:\Users\johnn\newapp\node_modules\is-ci\bin.js
+C:\Users\johnn\newapp\jsesc -> C:\Users\johnn\newapp\node_modules\jsesc\bin\jsesc
+C:\Users\johnn\newapp\json5 -> C:\Users\johnn\newapp\node_modules\json5\lib\cli.js
+C:\Users\johnn\newapp\loose-envify -> C:\Users\johnn\newapp\node_modules\loose-envify\cli.js
+C:\Users\johnn\newapp\miller-rabin -> C:\Users\johnn\newapp\node_modules\miller-rabin\bin\miller-rabin
+C:\Users\johnn\newapp\mime -> C:\Users\johnn\newapp\node_modules\mime\cli.js
+C:\Users\johnn\newapp\mkdirp -> C:\Users\johnn\newapp\node_modules\mkdirp\bin\cmd.js
+C:\Users\johnn\newapp\opener -> C:\Users\johnn\newapp\node_modules\opener\bin\opener-bin.js
+C:\Users\johnn\newapp\nopt -> C:\Users\johnn\newapp\node_modules\nopt\bin\nopt.js
+C:\Users\johnn\newapp\prettier -> C:\Users\johnn\newapp\node_modules\prettier\bin-prettier.js
+C:\Users\johnn\newapp\errno -> C:\Users\johnn\newapp\node_modules\errno\cli.js
+C:\Users\johnn\newapp\regjsparser -> C:\Users\johnn\newapp\node_modules\regjsparser\bin\parser
+C:\Users\johnn\newapp\import-local-fixture -> C:\Users\johnn\newapp\node_modules\import-local\fixtures\cli.js
+C:\Users\johnn\newapp\selenium -> C:\Users\johnn\newapp\node_modules\selenium-server\bin\selenium
+C:\Users\johnn\newapp\semver -> C:\Users\johnn\newapp\node_modules\semver\bin\semver
+C:\Users\johnn\newapp\sha.js -> C:\Users\johnn\newapp\node_modules\sha.js\bin.js
+C:\Users\johnn\newapp\js-yaml -> C:\Users\johnn\newapp\node_modules\js-yaml\bin\js-yaml.js
+C:\Users\johnn\newapp\autoprefixer -> C:\Users\johnn\newapp\node_modules\autoprefixer\bin\autoprefixer
+C:\Users\johnn\newapp\multicast-dns -> C:\Users\johnn\newapp\node_modules\multicast-dns\cli.js
+C:\Users\johnn\newapp\sshpk-verify -> C:\Users\johnn\newapp\node_modules\sshpk\bin\sshpk-verify
+C:\Users\johnn\newapp\sshpk-sign -> C:\Users\johnn\newapp\node_modules\sshpk\bin\sshpk-sign
+C:\Users\johnn\newapp\sshpk-conv -> C:\Users\johnn\newapp\node_modules\sshpk\bin\sshpk-conv
+C:\Users\johnn\newapp\escodegen -> C:\Users\johnn\newapp\node_modules\escodegen\bin\escodegen.js
+C:\Users\johnn\newapp\esgenerate -> C:\Users\johnn\newapp\node_modules\escodegen\bin\esgenerate.js
+C:\Users\johnn\newapp\uglifyjs -> C:\Users\johnn\newapp\node_modules\uglify-js\bin\uglifyjs
+C:\Users\johnn\newapp\html-minifier -> C:\Users\johnn\newapp\node_modules\html-minifier\cli.js
+C:\Users\johnn\newapp\svgo -> C:\Users\johnn\newapp\node_modules\svgo\bin\svgo
+C:\Users\johnn\newapp\uuid -> C:\Users\johnn\newapp\node_modules\uuid\bin\uuid
+C:\Users\johnn\newapp\watch -> C:\Users\johnn\newapp\node_modules\watch\cli.js
+C:\Users\johnn\newapp\sane -> C:\Users\johnn\newapp\node_modules\sane\src\cli.js
+C:\Users\johnn\newapp\webpack-bundle-analyzer -> C:\Users\johnn\newapp\node_modules\webpack-bundle-analyzer\lib\bin\analyzer.js
+C:\Users\johnn\newapp\which -> C:\Users\johnn\newapp\node_modules\which\bin\which
+C:\Users\johnn\newapp\handlebars -> C:\Users\johnn\newapp\node_modules\handlebars\bin\handlebars
+C:\Users\johnn\newapp\rimraf -> C:\Users\johnn\newapp\node_modules\rimraf\bin.js
+C:\Users\johnn\newapp\mocha-nightwatch -> C:\Users\johnn\newapp\node_modules\mocha-nightwatch\bin\mocha
+C:\Users\johnn\newapp\_mocha-nightwatch -> C:\Users\johnn\newapp\node_modules\mocha-nightwatch\bin\_mocha
+C:\Users\johnn\newapp\nightwatch -> C:\Users\johnn\newapp\node_modules\nightwatch\bin\nightwatch
+C:\Users\johnn\newapp\webpack-dev-server -> C:\Users\johnn\newapp\node_modules\webpack-dev-server\bin\webpack-dev-server.js
+C:\Users\johnn\newapp\webpack -> C:\Users\johnn\newapp\node_modules\webpack\bin\webpack.js
+C:\Users\johnn\newapp\editorconfig -> C:\Users\johnn\newapp\node_modules\editorconfig\bin\editorconfig
+C:\Users\johnn\newapp\css-beautify -> C:\Users\johnn\newapp\node_modules\js-beautify\js\bin\css-beautify.js
+C:\Users\johnn\newapp\js-beautify -> C:\Users\johnn\newapp\node_modules\js-beautify\js\bin\js-beautify.js
+C:\Users\johnn\newapp\html-beautify -> C:\Users\johnn\newapp\node_modules\js-beautify\js\bin\html-beautify.js
+C:\Users\johnn\newapp\eslint -> C:\Users\johnn\newapp\node_modules\eslint\bin\eslint.js
+C:\Users\johnn\newapp\jest-runtime -> C:\Users\johnn\newapp\node_modules\jest-runtime\bin\jest-runtime.js
+C:\Users\johnn\newapp\jest -> C:\Users\johnn\newapp\node_modules\jest\bin\jest.js
+C:\Users\johnn\newapp\extract-zip -> C:\Users\johnn\newapp\node_modules\extract-zip\cli.js
+C:\Users\johnn\newapp\chromedriver -> C:\Users\johnn\newapp\node_modules\chromedriver\bin\chromedriver
+C:\Users\johnn\newapp\vue-cli-service -> C:\Users\johnn\newapp\node_modules\@vue\cli-service\bin\vue-cli-service.js
+
+> chromedriver@2.42.1 install C:\Users\johnn\newapp\node_modules\chromedriver
+> node install.js
+
+Downloading https://chromedriver.storage.googleapis.com/2.42/chromedriver_win32.zip
+Saving to C:\Users\johnn\AppData\Local\Temp\chromedriver\chromedriver_win32.zip
+Received 781K...
+Received 1568K...
+Received 2352K...
+Received 3136K...
+Received 3499K total.
+Extracting zip contents
+Copying to target path C:\Users\johnn\newapp\node_modules\chromedriver\lib\chromedriver
+Done. ChromeDriver binary available at C:\Users\johnn\newapp\node_modules\chromedriver\lib\chromedriver\chromedriver.exe
+
+> yorkie@2.0.0 install C:\Users\johnn\newapp\node_modules\yorkie
+> node bin/install.js
+
+setting up Git hooks
+done
+
+added 1625 packages from 1129 contributors in 134.868s
+🚀  Invoking generators...
+📦  Installing additional dependencies...
+
+C:\Users\johnn\newapp\acorn -> C:\Users\johnn\newapp\node_modules\acorn\bin\acorn
+C:\Users\johnn\newapp\ansi-html -> C:\Users\johnn\newapp\node_modules\ansi-html\bin\ansi-html
+C:\Users\johnn\newapp\atob -> C:\Users\johnn\newapp\node_modules\atob\bin\atob.js
+C:\Users\johnn\newapp\babylon -> C:\Users\johnn\newapp\node_modules\babylon\bin\babylon.js
+C:\Users\johnn\newapp\cssesc -> C:\Users\johnn\newapp\node_modules\cssesc\bin\cssesc
+C:\Users\johnn\newapp\browserslist -> C:\Users\johnn\newapp\node_modules\browserslist\cli.js
+C:\Users\johnn\newapp\esvalidate -> C:\Users\johnn\newapp\node_modules\esprima\bin\esvalidate.js
+C:\Users\johnn\newapp\esparse -> C:\Users\johnn\newapp\node_modules\esprima\bin\esparse.js
+C:\Users\johnn\newapp\eslint-config-prettier-check -> C:\Users\johnn\newapp\node_modules\eslint-config-prettier\bin\cli.js
+C:\Users\johnn\newapp\he -> C:\Users\johnn\newapp\node_modules\he\bin\he
+C:\Users\johnn\newapp\in-publish -> C:\Users\johnn\newapp\node_modules\in-publish\in-publish.js
+C:\Users\johnn\newapp\in-install -> C:\Users\johnn\newapp\node_modules\in-publish\in-install.js
+C:\Users\johnn\newapp\not-in-publish -> C:\Users\johnn\newapp\node_modules\in-publish\not-in-publish.js
+C:\Users\johnn\newapp\not-in-install -> C:\Users\johnn\newapp\node_modules\in-publish\not-in-install.js
+C:\Users\johnn\newapp\is-ci -> C:\Users\johnn\newapp\node_modules\is-ci\bin.js
+C:\Users\johnn\newapp\jsesc -> C:\Users\johnn\newapp\node_modules\jsesc\bin\jsesc
+C:\Users\johnn\newapp\json5 -> C:\Users\johnn\newapp\node_modules\json5\lib\cli.js
+C:\Users\johnn\newapp\loose-envify -> C:\Users\johnn\newapp\node_modules\loose-envify\cli.js
+C:\Users\johnn\newapp\miller-rabin -> C:\Users\johnn\newapp\node_modules\miller-rabin\bin\miller-rabin
+C:\Users\johnn\newapp\mime -> C:\Users\johnn\newapp\node_modules\mime\cli.js
+C:\Users\johnn\newapp\mkdirp -> C:\Users\johnn\newapp\node_modules\mkdirp\bin\cmd.js
+C:\Users\johnn\newapp\opener -> C:\Users\johnn\newapp\node_modules\opener\bin\opener-bin.js
+C:\Users\johnn\newapp\nopt -> C:\Users\johnn\newapp\node_modules\nopt\bin\nopt.js
+C:\Users\johnn\newapp\prettier -> C:\Users\johnn\newapp\node_modules\prettier\bin-prettier.js
+C:\Users\johnn\newapp\errno -> C:\Users\johnn\newapp\node_modules\errno\cli.js
+C:\Users\johnn\newapp\regjsparser -> C:\Users\johnn\newapp\node_modules\regjsparser\bin\parser
+C:\Users\johnn\newapp\import-local-fixture -> C:\Users\johnn\newapp\node_modules\import-local\fixtures\cli.js
+C:\Users\johnn\newapp\selenium -> C:\Users\johnn\newapp\node_modules\selenium-server\bin\selenium
+C:\Users\johnn\newapp\semver -> C:\Users\johnn\newapp\node_modules\semver\bin\semver
+C:\Users\johnn\newapp\sha.js -> C:\Users\johnn\newapp\node_modules\sha.js\bin.js
+C:\Users\johnn\newapp\js-yaml -> C:\Users\johnn\newapp\node_modules\js-yaml\bin\js-yaml.js
+C:\Users\johnn\newapp\autoprefixer -> C:\Users\johnn\newapp\node_modules\autoprefixer\bin\autoprefixer
+C:\Users\johnn\newapp\multicast-dns -> C:\Users\johnn\newapp\node_modules\multicast-dns\cli.js
+C:\Users\johnn\newapp\sshpk-conv -> C:\Users\johnn\newapp\node_modules\sshpk\bin\sshpk-conv
+C:\Users\johnn\newapp\sshpk-sign -> C:\Users\johnn\newapp\node_modules\sshpk\bin\sshpk-sign
+C:\Users\johnn\newapp\sshpk-verify -> C:\Users\johnn\newapp\node_modules\sshpk\bin\sshpk-verify
+C:\Users\johnn\newapp\escodegen -> C:\Users\johnn\newapp\node_modules\escodegen\bin\escodegen.js
+C:\Users\johnn\newapp\esgenerate -> C:\Users\johnn\newapp\node_modules\escodegen\bin\esgenerate.js
+C:\Users\johnn\newapp\uglifyjs -> C:\Users\johnn\newapp\node_modules\uglify-js\bin\uglifyjs
+C:\Users\johnn\newapp\html-minifier -> C:\Users\johnn\newapp\node_modules\html-minifier\cli.js
+C:\Users\johnn\newapp\svgo -> C:\Users\johnn\newapp\node_modules\svgo\bin\svgo
+C:\Users\johnn\newapp\uuid -> C:\Users\johnn\newapp\node_modules\uuid\bin\uuid
+C:\Users\johnn\newapp\watch -> C:\Users\johnn\newapp\node_modules\watch\cli.js
+C:\Users\johnn\newapp\sane -> C:\Users\johnn\newapp\node_modules\sane\src\cli.js
+C:\Users\johnn\newapp\webpack-bundle-analyzer -> C:\Users\johnn\newapp\node_modules\webpack-bundle-analyzer\lib\bin\analyzer.js
+C:\Users\johnn\newapp\which -> C:\Users\johnn\newapp\node_modules\which\bin\which
+C:\Users\johnn\newapp\handlebars -> C:\Users\johnn\newapp\node_modules\handlebars\bin\handlebars
+C:\Users\johnn\newapp\rimraf -> C:\Users\johnn\newapp\node_modules\rimraf\bin.js
+C:\Users\johnn\newapp\node-gyp -> C:\Users\johnn\newapp\node_modules\node-gyp\bin\node-gyp.js
+C:\Users\johnn\newapp\mocha-nightwatch -> C:\Users\johnn\newapp\node_modules\mocha-nightwatch\bin\mocha
+C:\Users\johnn\newapp\_mocha-nightwatch -> C:\Users\johnn\newapp\node_modules\mocha-nightwatch\bin\_mocha
+C:\Users\johnn\newapp\nightwatch -> C:\Users\johnn\newapp\node_modules\nightwatch\bin\nightwatch
+C:\Users\johnn\newapp\sassgraph -> C:\Users\johnn\newapp\node_modules\sass-graph\bin\sassgraph
+C:\Users\johnn\newapp\webpack-dev-server -> C:\Users\johnn\newapp\node_modules\webpack-dev-server\bin\webpack-dev-server.js
+C:\Users\johnn\newapp\webpack -> C:\Users\johnn\newapp\node_modules\webpack\bin\webpack.js
+C:\Users\johnn\newapp\editorconfig -> C:\Users\johnn\newapp\node_modules\editorconfig\bin\editorconfig
+C:\Users\johnn\newapp\js-beautify -> C:\Users\johnn\newapp\node_modules\js-beautify\js\bin\js-beautify.js
+C:\Users\johnn\newapp\html-beautify -> C:\Users\johnn\newapp\node_modules\js-beautify\js\bin\html-beautify.js
+C:\Users\johnn\newapp\css-beautify -> C:\Users\johnn\newapp\node_modules\js-beautify\js\bin\css-beautify.js
+C:\Users\johnn\newapp\eslint -> C:\Users\johnn\newapp\node_modules\eslint\bin\eslint.js
+C:\Users\johnn\newapp\jest-runtime -> C:\Users\johnn\newapp\node_modules\jest-runtime\bin\jest-runtime.js
+C:\Users\johnn\newapp\jest -> C:\Users\johnn\newapp\node_modules\jest\bin\jest.js
+C:\Users\johnn\newapp\extract-zip -> C:\Users\johnn\newapp\node_modules\extract-zip\cli.js
+C:\Users\johnn\newapp\chromedriver -> C:\Users\johnn\newapp\node_modules\chromedriver\bin\chromedriver
+C:\Users\johnn\newapp\vue-cli-service -> C:\Users\johnn\newapp\node_modules\@vue\cli-service\bin\vue-cli-service.js
+C:\Users\johnn\newapp\node-sass -> C:\Users\johnn\newapp\node_modules\node-sass\bin\node-sass
+
+> chromedriver@2.42.1 install C:\Users\johnn\newapp\node_modules\chromedriver
+> node install.js
+
+Downloading https://chromedriver.storage.googleapis.com/2.42/chromedriver_win32.zip
+Saving to C:\Users\johnn\AppData\Local\Temp\chromedriver\chromedriver_win32.zip
+Received 781K...
+Received 1566K...
+Received 2350K...
+Received 3134K...
+Received 3499K total.
+Extracting zip contents
+Copying to target path C:\Users\johnn\newapp\node_modules\chromedriver\lib\chromedriver
+Done. ChromeDriver binary available at C:\Users\johnn\newapp\node_modules\chromedriver\lib\chromedriver\chromedriver.exe
+
+> yorkie@2.0.0 install C:\Users\johnn\newapp\node_modules\yorkie
+> node bin/install.js
+
+setting up Git hooks
+done
+
+
+> node-sass@4.9.4 install C:\Users\johnn\newapp\node_modules\node-sass
+> node scripts/install.js
+
+Cached binary found at C:\Users\johnn\AppData\Roaming\npm-cache\node-sass\4.9.4\win32-x64-64_binding.node
+
+> node-sass@4.9.4 postinstall C:\Users\johnn\newapp\node_modules\node-sass
+> node scripts/build.js
+
+Binary found at C:\Users\johnn\newapp\node_modules\node-sass\vendor\win32-x64-64\binding.node
+Testing binary
+Binary is fine
+added 1717 packages from 1144 contributors in 152.951s
+-  Running completion hooks...error: Parsing error: Unexpected token, expected ","
+
+  1 | ///bin/sh
+> 2 | basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
+    |                   ^
+  3 |
+  4 | case `uname` in
+  5 |     *CYGWIN*) basedir=`cygpath -w "$basedir"`;; at newapp\sha.js:2:19:
+  1 | #!/bin/sh
+> 2 | basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
+    |                   ^
+  3 |
+  4 | case `uname` in
+  5 |     *CYGWIN*) basedir=`cygpath -w "$basedir"`;;
+
+1 error found.
+C:\Users\johnn>
+```
+
+Trying to FIGURE OUT WHAT I DID TO MY Vue DEV Environment.
+
+
+**Link(s) to work**
+
+1. Working on learning VUE-TDD application.
+
+Code is at [Vue-projects repo in github](https://github.com/Johnny2136/vuetify-projects).
+
 ### Day 82: October 14, Sunday
 
 **Today 's Progress**: Continuing my work though TDD of Vue.js
