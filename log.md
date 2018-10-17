@@ -1,5 +1,33 @@
 # 100 Days Of Code - Log
 
+
+### Day 84: October 16, Tuesday
+
+**Today 's Progress**: Continuing my troubleshooting of Vue.js 3.0.
+
+**Thoughts**: third day in a row my dev environment has been down, So I uninstalled VUE-CLI using Node package manager still having issues.
+
+### Resources used:
+  * [TEST FIRST DEVELOPMENT WITH VUE.JS, QUASAR, AND JEST-CUCUMBER](https://blog.zanclus.com/2018/10/test-first-development-with-vuejs.html)]
+  * [Vue Test Utils](https://vue-test-utils.vuejs.org/guides/getting-started.html)
+  * [Vue.js.org](https://vuejs.org/)
+  * [Vue-projects repo in github](https://github.com/Johnny2136/vuetify-projects)
+
+Before running npm install...
+[TroubleShooting#1](https://raw.githubusercontent.com/Johnny2136/johnny2136.github.io/master/images/VUE%20troubleshooting1.png)
+
+After running a new instance of VUE-CLI...
+[TroubleShooting#2](https://raw.githubusercontent.com/Johnny2136/johnny2136.github.io/master/images/VUE%20troubleshooting2.png)
+
+Trying to FIGURE OUT How to fix MY Vue DEV Environment.
+
+**Link(s) to work**
+
+1. Working on learning VUE-TDD application.
+
+Code is at [Vue-projects repo in github](https://github.com/Johnny2136/vuetify-projects).
+
+
 ### Day 83: October 15, Monday
 
 **Today 's Progress**: Continuing my work though TDD of Vue.js 3.0.
