@@ -14,10 +14,10 @@
   * [Vue-projects repo in github](https://github.com/Johnny2136/vuetify-projects)
 
 Before running npm install...
-[TroubleShooting#1](https://raw.githubusercontent.com/Johnny2136/johnny2136.github.io/master/images/VUE%20troubleshooting1.png)
+![TroubleShooting#1](https://raw.githubusercontent.com/Johnny2136/johnny2136.github.io/master/images/VUE%20troubleshooting1.png)
 
 After running a new instance of VUE-CLI...
-[TroubleShooting#2](https://raw.githubusercontent.com/Johnny2136/johnny2136.github.io/master/images/VUE%20troubleshooting2.png)
+![TroubleShooting#2](https://raw.githubusercontent.com/Johnny2136/johnny2136.github.io/master/images/VUE%20troubleshooting2.png)
 
 Trying to FIGURE OUT How to fix MY Vue DEV Environment.
 
