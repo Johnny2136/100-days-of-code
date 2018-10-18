@@ -1,5 +1,30 @@
 # 100 Days Of Code - Log
 
+![Success](https://raw.githubusercontent.com/Johnny2136/johnny2136.github.io/master/images/PinkyParty.gif)
+### Day 85: October 17, Wednesday
+
+**Today 's Progress**: FIXED DEV ENVIRONMENT!!!!!! for Vue.js 3.0.
+
+**Thoughts**: Fourth day in a row my dev environment has been down, So drastic measures I stood up a new dev in Fedora28 IT WORKED!!!
+
+### Resources used:
+  * [TEST FIRST DEVELOPMENT WITH VUE.JS, QUASAR, AND JEST-CUCUMBER](https://blog.zanclus.com/2018/10/test-first-development-with-vuejs.html)]
+  * [Vue Test Utils](https://vue-test-utils.vuejs.org/guides/getting-started.html)
+  * [Vue.js.org](https://vuejs.org/)
+  * [Vue-projects repo in github](https://github.com/Johnny2136/my-tdd)
+
+FIXED!!!!!!!!
+![Success](https://raw.githubusercontent.com/Johnny2136/johnny2136.github.io/master/images/VUE%20troubleshooting3.png)
+
+Trying to FIGURE OUT How to fix MY Vue DEV Environment.
+
+**Link(s) to work**
+
+1. Working on learning VUE-TDD application.
+
+Code is at [Vue-projects repo in github](https://github.com/Johnny2136/my-tdd).
+
+
 
 ### Day 84: October 16, Tuesday
 
