@@ -1,5 +1,36 @@
 # 100 Days Of Code - Log
 
+![Friday](https://raw.githubusercontent.com/Johnny2136/johnny2136.github.io/master/images/VUE_Passing_and%20Building.png)
+
+### Day 87: October 19, Friday
+
+**Today 's Progress**: Worked though the unit test blog finished with expected results(AT LAST!!!!).
+
+**Thoughts**: Added failed test, Code added to make failing test pass then worked on changes to get it to build tomorrow will add unit tests to my todo projects.
+
+### Resources used:
+  * [TEST FIRST DEVELOPMENT WITH VUE.JS, QUASAR, AND JEST-CUCUMBER](https://blog.zanclus.com/2018/10/test-first-development-with-vuejs.html)]
+  * [Vue Test Utils](https://vue-test-utils.vuejs.org/guides/getting-started.html)
+  * [Vue.js.org](https://vuejs.org/)
+  * [Vue-projects repo in github](https://github.com/Johnny2136/my-tdd)
+
+Continuing to work on groking TDD with JEST EVERYTHING PASSNG!!!!!
+![Success](https://raw.githubusercontent.com/Johnny2136/johnny2136.github.io/master/images/VUE_Detail_%20Tests.png)
+
+Changed `img` to `imgs` to get test fail....
+![fail](https://raw.githubusercontent.com/Johnny2136/johnny2136.github.io/master/images/VUE_Failing_%20test.png)
+
+Changed it back and...
+![Success](https://raw.githubusercontent.com/Johnny2136/johnny2136.github.io/master/images/VUE_Passing_Test.png)
+
+Onward...
+
+**Link(s) to work**
+
+1. Working on learning VUE-TDD application.
+
+Code is at [Vue-projects repo in github](https://github.com/Johnny2136/my-tdd).
+
 ![Thursday](https://raw.githubusercontent.com/Johnny2136/johnny2136.github.io/master/images/Screenshot%20from%202018-10-18%2021-11-32.png)
 
 ## Day 86: October 18, Thursday
