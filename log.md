@@ -1,5 +1,30 @@
 # 100 Days Of Code - Log
 
+![Thursday](https://raw.githubusercontent.com/Johnny2136/johnny2136.github.io/master/images/Screenshot%20from%202018-10-18%2021-11-32.png)
+
+## Day 86: October 18, Thursday
+
+**Today 's Progress**: Started working though the unit test blog.
+
+**Thoughts**: Added failed test, tomorrow will code to pass the unit tests.
+
+### Resources used:
+  * [TEST FIRST DEVELOPMENT WITH VUE.JS, QUASAR, AND JEST-CUCUMBER](https://blog.zanclus.com/2018/10/test-first-development-with-vuejs.html)]
+  * [Vue Test Utils](https://vue-test-utils.vuejs.org/guides/getting-started.html)
+  * [Vue.js.org](https://vuejs.org/)
+  * [Vue-projects repo in github](https://github.com/Johnny2136/my-tdd)
+
+Continuing to work on groking TDD with JEST
+![Success](https://raw.githubusercontent.com/Johnny2136/johnny2136.github.io/master/images/Failing_Unit_Test.png)
+
+Onward...
+
+**Link(s) to work**
+
+1. Working on learning VUE-TDD application.
+
+Code is at [Vue-projects repo in github](https://github.com/Johnny2136/my-tdd).
+
 ![Success](https://raw.githubusercontent.com/Johnny2136/johnny2136.github.io/master/images/PinkyParty.gif)
 ### Day 85: October 17, Wednesday
 
