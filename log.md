@@ -1,5 +1,74 @@
 # 100 Days Of Code - Log
 
+![Sunday](https://pbs.twimg.com/media/Cg0x8vnXEAEB2Le.jpg)
+
+## Day 89: October 21, Sunday
+
+**Today 's Progress**:Adding functionality to my TDD app.
+
+**Thoughts**:Learning to write gherkin tests.
+
+### Resources used:
+  * [Quasar Framework](https://quasar-framework.org/)]
+  * [Vue Test Utils](https://vue-test-utils.vuejs.org/guides/getting-started.html)
+  * [Vue.js.org](https://vuejs.org/)
+  * [Vue-projects repo in github](https://github.com/Johnny2136/my-tdd)
+
+Continuing to work on groking TDD with JEST!
+
+Here is my Gherkin code...
+```gherkin
+Scenario: List on the home page
+  Given The page is open in a browser
+  When I inspect the page elements
+  Then I should see a h2 list title
+  And the title should contain the correct words
+  And the page should contain a UL tag
+  And the page should have at least 3 li items
+```
+
+and Jest...
+```javascript
+test("List on the home page", ({ given, when, then }) => {
+        let wrapper;
+
+            // Examine the Home page default layout
+            given("The page is open in a browser", () => {
+            wrapper = mount(Default, { localVue, router });
+            });
+
+            // There really is not operation here, but we need a `when` clause
+            when("I inspect the page elements", () => {
+                // No-Operation
+            });
+
+            then("I should see a h2 list title", () => {
+                expect(wrapper.html()).toMatch(/^<h2.*/);
+            });
+
+            then("the title should contain the correct words", () => {
+                expect(wrapper.find("div.q-toolbar-title").text()).toMatch(/^My ToDo List.*/);
+            });
+
+            then("the page should contain a UL tag", () => {
+                expect(wrapper.html()).toMatch(/^<ul.*/);
+            });
+
+            then("the page should have at least 3 li items", () => {
+                expect(wrapper.html()).toMatch(/^<li.*/);
+            });
+        });
+  ```
+
+Onward, continue working on unit testing and then code to make tests pass, using TDD.
+
+**Link(s) to work**
+
+1. Working on learning VUE-TDD application.
+
+Code is at [Vue-projects repo in github](https://github.com/Johnny2136/my-tdd).
+
+
 ![saturday](https://vegibit.com/wp-content/uploads/2018/05/Quasar-Framework.png)
 
 ### Day 88: October 20, Saturday
