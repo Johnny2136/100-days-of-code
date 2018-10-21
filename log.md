@@ -1,5 +1,29 @@
 # 100 Days Of Code - Log
 
+![saturday](https://vegibit.com/wp-content/uploads/2018/05/Quasar-Framework.png)
+
+### Day 88: October 20, Saturday
+
+**Today 's Progress**:Adding functionality to my TDD app.
+
+**Thoughts**:Learning to write gherkin tests.
+
+### Resources used:
+  * [Quasar Framework](https://quasar-framework.org/)]
+  * [Vue Test Utils](https://vue-test-utils.vuejs.org/guides/getting-started.html)
+  * [Vue.js.org](https://vuejs.org/)
+  * [Vue-projects repo in github](https://github.com/Johnny2136/my-tdd)
+
+Continuing to work on groking TDD with JEST EVERYTHING PASSNG!!!!!
+
+Onward...
+
+**Link(s) to work**
+
+1. Working on learning VUE-TDD application.
+
+Code is at [Vue-projects repo in github](https://github.com/Johnny2136/my-tdd).
+
 ![Friday](https://raw.githubusercontent.com/Johnny2136/johnny2136.github.io/master/images/VUE_Passing_and%20Building.png)
 
 ### Day 87: October 19, Friday
