@@ -9,7 +9,7 @@
 **Thoughts**:Learning to write gherkin tests.
 
 ### Resources used:
-  * [Quasar Framework](https://quasar-framework.org/)]
+  * [Quasar Framework](https://quasar-framework.org/)
   * [Vue Test Utils](https://vue-test-utils.vuejs.org/guides/getting-started.html)
   * [Vue.js.org](https://vuejs.org/)
   * [Vue-projects repo in github](https://github.com/Johnny2136/my-tdd)
