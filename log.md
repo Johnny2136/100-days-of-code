@@ -17,6 +17,7 @@
 Continuing to work on groking TDD with JEST!
 
 Here is my Gherkin code...
+
 ```gherkin
 Scenario: List on the home page
   Given The page is open in a browser
@@ -28,6 +29,7 @@ Scenario: List on the home page
 ```
 
 and Jest...
+
 ```javascript
 test("List on the home page", ({ given, when, then }) => {
         let wrapper;
