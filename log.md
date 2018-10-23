@@ -1,5 +1,84 @@
 # 100 Days Of Code - Log
 
+![Monday](https://raw.githubusercontent.com/Johnny2136/johnny2136.github.io/master/images/Cat-Illustrations-040.jpg)
+
+### Day 90: October 22, Monday
+
+**Today 's Progress**:Adding functionality to my TDD app.
+
+**Thoughts**:Setteled on developing list items in Quasar as follows:
+Below is a list of Quasar components that you can use to define lists and list items:
+
+  * QList (encapsulating QItems and all other List related components)
+  * QListHeader (header of a section in QList)
+  * QItemSeparator (external Item separator/separator)
+  * QItem (encapsulating everything an Item contains)
+  * QItemSide (left or right side)
+  * QItemMain (for main content of an Item)
+  * QItemTile (for individual parts of QItemSide and QItemMain, like label, icon, avatar, image, …)
+
+  ![my framework](https://quasar-framework.org/images/q-list.svg)
+
+### Resources used:
+  * [Quasar Framework](https://quasar-framework.org/)
+  * [Vue Test Utils](https://vue-test-utils.vuejs.org/guides/getting-started.html)
+  * [Vue.js.org](https://vuejs.org/)
+  * [Vue-projects repo in github](https://github.com/Johnny2136/my-tdd)
+
+Continuing to work on groking TDD with JEST!
+
+Here is my Gherkin code...
+```gherkin
+Scenario: List on the home page
+  Given The page is open in a browser
+  When I inspect the page elements
+  Then I should see a h2 list title
+  And the title should contain the correct words
+  And the page should contain a UL tag
+  And the page should have at least 3 li items
+```
+
+and Jest...
+```javascript
+test("List on the home page", ({ given, when, then }) => {
+        let wrapper;
+
+            // Examine the Home page default layout
+            given("The page is open in a browser", () => {
+            wrapper = mount(Default, { localVue, router });
+            });
+
+            // There really is not operation here, but we need a `when` clause
+            when("I inspect the page elements", () => {
+                // No-Operation
+            });
+
+            then("I should see a h2 list title", () => {
+                expect(wrapper.html()).toMatch(/^<q-list-header.*/);
+            });
+
+            then("the title should contain the correct words", () => {
+                expect(wrapper.find("div.q-List-Header ").text()).toMatch(/^My ToDo List.*/);
+            });
+
+            then("the page should contain a UL tag", () => {
+                expect(wrapper.html()).toMatch(/^<q-item.*/);
+            });
+
+            then("the page should have at least 3 li items", () => {
+                expect(wrapper.html()).toMatch(/^<q-item-main.*/);
+            });
+        });
+  ```
+  ![Failing tests](https://raw.githubusercontent.com/Johnny2136/johnny2136.github.io/master/images/Screenshot%20from%202018-10-22-NewFailingTests.png.png)
+Onward, continue working on unit testing and then code to make tests pass, using TDD.
+
+**Link(s) to work**
+
+1. Working on learning VUE-TDD application.
+
+Code is at [Vue-projects repo in github](https://github.com/Johnny2136/my-tdd).
+
 ![Sunday](https://pbs.twimg.com/media/Cg0x8vnXEAEB2Le.jpg)
 
 ## Day 89: October 21, Sunday
