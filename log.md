@@ -126,7 +126,7 @@ test("List on the home page", ({ given, when, then }) => {
   </script>
   ```
 
-  ![Failing tests](https://raw.githubusercontent.com/Johnny2136/johnny2136.github.io/feature/images/Screenshot%20from%202018-10-24%2020-49-17.png)
+  ![Failing tests](https://raw.githubusercontent.com/Johnny2136/100-days-of-code/master/images/Screenshot%20from%202018-10-24%2020-49-17.png)
 Onward, continue working on unit testing and then code to make tests pass, using TDD.
 
 **Link(s) to work**
