@@ -1,5 +1,140 @@
 # 100 Days Of Code - Log
 
+![wednesday](https://raw.githubusercontent.com/Johnny2136/johnny2136.github.io/feature/images/Screenshot%20from%202018-10-24%2020-43-07.png)
+## Day 92: October 24, Wednesday
+
+**Today 's Progress** Adding functionality to my todo app using TDD.
+
+**Thoughts** Coding to make my unit test pass, so far no luck.
+
+### Resources used:
+  * [Quasar Framework](https://quasar-framework.org/)
+  * [Vue Test Utils](https://vue-test-utils.vuejs.org/guides/getting-started.html)
+  * [Vue.js.org](https://vuejs.org/)
+  * [Vue-projects repo in github](https://github.com/Johnny2136/my-tdd)
+
+Continuing to work on groking TDD with JEST!
+
+Here is my Gherkin code:
+
+```gherkin
+Scenario: List on the home page
+  Given The page is open in a browser
+  When I inspect the page elements
+  Then I should see a list title
+  And the title should contain the correct words
+  And the page should contain a UL tag
+  And the page should have at least 3 li items
+```
+
+and Jest:
+
+```javascript
+test("List on the home page", ({ given, when, then }) => {
+        let wrapper;
+
+            // Examine the Home page default layout
+            given("The page is open in a browser", () => {
+            wrapper = mount(Home, { localVue, router });
+            });
+
+            // There really is not operation here, but we need a `when` clause
+            when("I inspect the page elements", () => {
+                // No-Operation
+            });
+
+            then("I should see a list title", () => {
+                expect(wrapper.html()).toMatch(/^<q-list-header.*/);
+            });
+
+            then("the title should contain the correct words", () => {
+                expect(wrapper.find("div.q-List-Header ").text()).toMatch(/^My ToDo List.*/);
+            });
+
+            then("the page should contain a UL tag", () => {
+                expect(wrapper.html()).toMatch(/^<q-item.*/);
+            });
+
+            then("the page should have at least 3 li items", () => {
+                expect(wrapper.html()).toMatch(/^<q-item-main.*/);
+            });
+        });
+  ```
+
+  Lastly my code:
+
+  ```vuejs
+  <template>
+    <q-page>    
+      <div style="width 500px; max-width: 90vw;">
+        <q-list-header>My ToDo List</q-list-header>
+        <q-list highlight inset-separator>
+          <q-item>
+            <q-checkbox v-model="check1" color="secondary" />
+            <q-item-main label="Brunch this weekend" label-lines="1" />
+            <q-item-side right stamp="delete" />
+          </q-item>
+          <q-item>
+            <q-checkbox v-model="check2" color="secondary" />
+            <q-item-main label="learn JEST" label-lines="1" />
+            <q-item-side right stamp="delete" />
+          </q-item>
+          <q-item>
+            <q-checkbox v-model="check3" color="secondary" />
+            <q-item-main label="Learn Quasar" label-lines="1" />
+            <q-item-side right stamp="delete" />
+          </q-item>
+        </q-list>
+
+      </div>
+    </q-page>
+  </template>
+
+  <style>
+  </style>
+
+  <script>
+  export default {
+    name: "PageHome",
+    data () {
+      return {
+        check1: true,
+        check2: false,
+        check3: false,
+        newTodo: '',
+        idForTodo: 3,
+        beforeEditCache: '',
+        filter: 'all',
+        todos: [
+          {
+            'id': 1,
+            'title': 'Finish Vue Screencast',
+            'completed': false,
+            'editing': false,
+          },
+          {
+            'id': 2,
+            'title': 'Take over world',
+            'completed': false,
+            'editing': false,
+          },
+        ]
+      }
+    },
+
+  }
+  </script>
+  ```
+
+  ![Failing tests](https://raw.githubusercontent.com/Johnny2136/johnny2136.github.io/feature/images/Screenshot%20from%202018-10-24%2020-49-17.png)
+Onward, continue working on unit testing and then code to make tests pass, using TDD.
+
+**Link(s) to work**
+
+1. Working on learning VUE-TDD application.
+
+Code is at [Vue-projects repo in github](https://github.com/Johnny2136/my-tdd).
+
 ![Tuesday](https://raw.githubusercontent.com/Johnny2136/johnny2136.github.io/master/images/Screenshot%20from%202018-10-23%20CodeTesting.png)
 
 ## Day 91: October 23, Tuesday
