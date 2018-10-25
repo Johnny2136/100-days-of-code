@@ -1,6 +1,6 @@
 # 100 Days Of Code - Log
 
-![wednesday](images/Screenshot from 2018-10-24 20-43-07.png)
+![wednesday](https://raw.githubusercontent.com/Johnny2136/100-days-of-code/master/images/Screenshot%20from%202018-10-24%2020-43-07.png)
 ## Day 92: October 24, Wednesday
 
 **Today 's Progress** Adding functionality to my todo app using TDD.
