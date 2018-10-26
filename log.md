@@ -1,5 +1,195 @@
 # 100 Days Of Code - Log
 
+![Thursday](https://raw.githubusercontent.com/Johnny2136/johnny2136.github.io/master/images/QueryingCommunity.png)
+
+## Day 93: October 25, Thursday
+
+**Today 's Progress** Trying to add functionality to my todo app using TDD.
+
+**Thoughts** Coding to make my unit test pass, so far no luck. even reached out to the VUE discord community no luck...
+
+### Resources used:
+  * [https://vue-land.js.org/](https://vue-land.js.org/)
+  * [Quasar Framework](https://quasar-framework.org/)
+  * [Vue Test Utils](https://vue-test-utils.vuejs.org/guides/getting-started.html)
+  * [Vue.js.org](https://vuejs.org/)
+  * [Vue-projects repo in github](https://github.com/Johnny2136/my-tdd)
+
+Continuing to work on groking TDD with JEST!
+
+Here is my Gherkin code:
+
+```gherkin
+Scenario: List on the home page
+  Given The page is open in a browser
+  When I inspect the page elements
+  Then I should see a list title
+  And the title should contain the correct words
+  And the page should contain a List tag
+  And the page should have at least 3 list items
+```
+
+and Jest:
+
+```javascript
+import { defineFeature, loadFeature } from "jest-cucumber";
+import Quasar from "quasar-framework";
+import { mount, createLocalVue } from "@vue/test-utils";
+import Default from "src/layouts/Default.vue";
+import Home from "src/views/Home.vue";
+import router from "./src/router.js";
+import iconSet from "quasar-framework/icons/fontawesome";
+import "quasar-extras/fontawesome";
+
+const feature = loadFeature("tests/unit/features/Home.feature");
+defineFeature(feature, test => {
+    let localVue;
+    // Initialize the Vue.js rendering engine with Quasar and font-awesome
+    beforeEach(() => {
+        localVue = createLocalVue();
+        localVue.use(Quasar, {
+            config: {},
+            iconSet: iconSet
+        });
+    });
+    test("Opening the initial web page", ({ given, when, then }) => {
+        let wrapper;
+
+        // Load our Default layout into the Vue rendering engine along with the Router instance
+        given("The page is open in a browser", () => {
+            wrapper = mount(Default, { localVue, router });
+        });
+
+        // There really is not operation here, but we need a `when` clause
+        when("I inspect the page", () => {
+            // No-Operation
+        });
+
+        then("I should see the Home landing page", () => {
+            expect(wrapper.html()).toMatch(/^<div.*/);
+        });
+
+        then("the page should have a sidebar menu", () => {
+            expect(wrapper.find("aside.q-layout-drawer")).toBeDefined();
+            expect(wrapper.find("i.q-icon.fas.fa-bars")).toBeDefined();
+        });
+
+        then("the page should have a title bar", () => {
+            expect(wrapper.find("div.q-toolbar-title")).toBeDefined();
+        });
+
+        then("the title bar should contain the correct words", () => {
+            expect(wrapper.find("div.q-toolbar-title").text()).toMatch(/^My ToDo Application.*/);
+        });
+    });
+
+    test("List on the home page", ({ given, when, then }) => {
+        let wrapper;
+
+        // Examine the Home page default layout
+        given("The page is open in a browser", () => {
+            wrapper = mount(Home, { localVue, router });
+        });
+
+        // There really is not operation here, but we need a `when` clause
+        when("I inspect the page elements", () => {
+            // No-Operation
+        });
+
+        then("I should see a list title", () => {
+            expect(wrapper.find("div.q-list-header")).toBeDefined();
+        });
+
+        then("the title should contain the correct words", () => {
+            expect(wrapper.find("div.q-list-header").text()).toMatch(/^My ToDo List*/);
+        });
+
+        then("the page should contain a List tag", () => {
+            expect(wrapper.html()).toMatch(/^<q-item.*/);
+        });
+
+        then("the page should have at least 3 list items", () => {
+            expect(wrapper.html()).toMatch(/^<q-item-main.*/);
+        });
+    });
+});
+  ```
+
+  Lastly my code:
+
+  ```vuejs
+  <template>
+    <q-page>    
+      <div style="width 500px; max-width: 90vw;">
+        <q-list-header class="q-display-3">My ToDo List:</q-list-header>
+        <q-list highlight inset-separator>
+          <q-item>
+            <q-checkbox v-model="check1" color="secondary" />
+            <q-item-main label="Brunch this weekend" label-lines="1" />
+            <q-item-side right stamp="delete" />
+          </q-item>
+          <q-item>
+            <q-checkbox v-model="check2" color="secondary" />
+            <q-item-main label="learn JEST" label-lines="1" />
+            <q-item-side right stamp="delete" />
+          </q-item>
+          <q-item>
+            <q-checkbox v-model="check3" color="secondary" />
+            <q-item-main label="Learn Quasar" label-lines="1" />
+            <q-item-side right stamp="delete" />
+          </q-item>
+        </q-list>
+
+      </div>
+    </q-page>
+  </template>
+
+  <style>
+  </style>
+
+  <script>
+  export default {
+    name: "PageHome",
+    data () {
+      return {
+        check1: true,
+        check2: false,
+        check3: false,
+        newTodo: '',
+        idForTodo: 3,
+        beforeEditCache: '',
+        filter: 'all',
+        todos: [
+          {
+            'id': 1,
+            'title': 'Finish Vue Screencast',
+            'completed': false,
+            'editing': false,
+          },
+          {
+            'id': 2,
+            'title': 'Take over world',
+            'completed': false,
+            'editing': false,
+          },
+        ]
+      }
+    },
+
+  }
+  </script>
+  ```
+
+  ![Failing tests](https://raw.githubusercontent.com/Johnny2136/johnny2136.github.io/master/images/Screenshotfrom2018-10-24Error2.png)
+
+Continue troubleshooting unit testing and then code to make tests pass, using TDD.
+
+**Link(s) to work**
+
+1. Working on learning VUE-TDD application.
+
+Code is at [Vue-projects repo in github](https://github.com/Johnny2136/my-tdd).
+
 ![wednesday](https://raw.githubusercontent.com/Johnny2136/100-days-of-code/master/images/Screenshot%20from%202018-10-24%2020-43-07.png)
 ## Day 92: October 24, Wednesday
 
