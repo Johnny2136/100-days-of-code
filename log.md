@@ -1,5 +1,174 @@
 # 100 Days Of Code - Log
 
+![Friday](https://raw.githubusercontent.com/Johnny2136/johnny2136.github.io/master/images/Sometimes-You-Punt.png)
+
+### Day 94: October 26, Friday
+
+**Today 's Progress** Trying to add functionality to my todo app using TDD.
+
+**Thoughts** Coding to make my unit test pass, a bit of luck. No help from the VUE discord community. So i droped back and punt! I erased all my code changes and started with the passing tests...
+
+### Resources used:
+  * [https://vue-land.js.org/](https://vue-land.js.org/)
+  * [Quasar Framework](https://quasar-framework.org/)
+  * [Vue Test Utils](https://vue-test-utils.vuejs.org/guides/getting-started.html)
+  * [Vue.js.org](https://vuejs.org/)
+  * [Vue-projects repo in github](https://github.com/Johnny2136/my-tdd)
+
+Continuing to work on groking TDD with JEST!
+
+After going back to the passing tests I get:
+
+```shell
+> my-prog@0.1.0 test /home/johnny/VUE-apps/my-tdd
+> vue-cli-service test:unit
+
+ PASS  tests/unit/steps/Home.steps.js
+  Home Page
+    ✓ Opening the initial web page (301ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       1 passed, 1 total
+Snapshots:   0 total
+Time:        2.428s
+Ran all test suites.
+jest-html-reporter >> Report generated (/home/johnny/VUE-apps/my-tdd/test-report.html)
+```
+Then I added my Gherkin code:
+
+```gherkin
+Scenario: List on the initial web page
+  Given The page is open in a browser
+  When I inspect the page elements
+  Then I should see a list QListHeadertitle
+  And the QListHeadertitle should contain the correct words
+  And the page should contain a QList tag
+  And the page should have at least 3 QListItems
+```
+I then ran the test I totally expected to fail:
+(And it did but it gave a nice clue.)
+
+```shell
+> vue-cli-service test:unit
+
+ FAIL  tests/unit/steps/Home.steps.js
+  Home Page
+    ✓ Opening the initial web page (296ms)
+    ✕ encountered a declaration exception (26ms)
+
+  ● Home Page › encountered a declaration exception
+
+    Feature file has a scenario titled "List on the initial web page", but no match found in step definitions. Try adding the following code:
+
+    test('List on the initial web page', ({ given, when, then, pending }) => {
+        given('The page is open in a browser', () => {
+            pending();
+        });
+
+        when('I inspect the page elements', () => {
+            pending();
+        });
+
+        then('I should see a list QListHeadertitle', () => {
+            pending();
+        });
+
+        then('the QListHeadertitle should contain the correct words', () => {
+            pending();
+        });
+
+        then('the page should contain a QList tag', () => {
+            pending();
+        });
+
+        then(/^the page should have at least (.*) QListItems$/, (arg0) => {
+            pending();
+        });
+    });
+
+       9 |
+      10 | const feature = loadFeature("tests/unit/features/Home.feature");
+    > 11 | defineFeature(feature, test => {
+         | ^
+      12 |     let localVue;
+      13 |     // Initialize the Vue.js rendering engine with Quasar and font-awesome
+      14 |     beforeEach(() => {
+
+      at Object.<anonymous>.exports.checkThatFeatureFileAndStepDefinitionsHaveSameScenarios (node_modules/jest-cucumber/src/validation/scenario-validation.ts:127:15)
+      at Suite.<anonymous> (node_modules/jest-cucumber/src/feature-definition-creation.ts:188:9)
+      at defineFeature (node_modules/jest-cucumber/src/feature-definition-creation.ts:183:5)
+      at Object.<anonymous> (tests/unit/steps/Home.steps.js:11:1)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 passed, 2 total
+Snapshots:   0 total
+Time:        2.45s
+Ran all test suites.
+jest-html-reporter >> Report generated (/home/johnny/VUE-apps/my-tdd/test-report.html)
+```
+I added the suggested skeleton code:
+
+```javascript
+test('List on the initial web page', ({ given, when, then, pending }) => {
+        given('The page is open in a browser', () => {
+            pending();
+        });
+
+        when('I inspect the page elements', () => {
+            pending();
+        });
+
+        then('I should see a list QListHeadertitle', () => {
+            pending();
+        });
+
+        then('the QListHeadertitle should contain the correct words', () => {
+            pending();
+        });
+
+        then('the page should contain a QList tag', () => {
+            pending();
+        });
+
+        then(/^the page should have at least (.*) QListItems$/, (arg0) => {
+            pending();
+        });
+    });
+  ```
+now I run `NPM run test` and get:
+
+
+  ```bash
+  [johnny@localhost my-tdd]$ npm run test
+
+> my-prog@0.1.0 test /home/johnny/VUE-apps/my-tdd
+> vue-cli-service test:unit
+
+ PASS  tests/unit/steps/Home.steps.js
+  Home Page
+    ✓ Opening the initial web page (285ms)
+    ○ skipped 1 test
+
+Test Suites: 1 passed, 1 total
+Tests:       1 skipped, 1 passed, 2 total
+Snapshots:   0 total
+Time:        2.561s
+Ran all test suites.
+jest-html-reporter >> Report generated (/home/johnny/VUE-apps/my-tdd/test-report.html)
+[johnny@localhost my-tdd]$
+  ```
+So finally a place where I think I will be able to flesh out the tests and continue with my TDD exploration.
+
+  ![Failing tests](https://raw.githubusercontent.com/Johnny2136/johnny2136.github.io/master/images/Screenshot_2018-10-26_AddedBlankTests.png)
+
+Continue troubleshooting unit testing and then code to make tests pass, using TDD.
+
+**Link(s) to work**
+
+1. Working on learning VUE-TDD application.
+
+Code is at [Vue-projects repo in github](https://github.com/Johnny2136/my-tdd).
+
 ![Thursday](https://raw.githubusercontent.com/Johnny2136/johnny2136.github.io/master/images/QueryingCommunity.png)
 
 ## Day 93: October 25, Thursday
