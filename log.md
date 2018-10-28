@@ -1,5 +1,79 @@
 # 100 Days Of Code - Log
 
+![Saturday](https://raw.githubusercontent.com/Johnny2136/johnny2136.github.io/master/images/CodeSanboxJest.png)
+
+## Day 95: October 27, Saturday
+
+**Today 's Progress** Trying to figure out how to do TDD.
+
+**Thoughts** Working trough a JEST test tutorial here [Write the first Vue.js Component Unit Test in Jest](https://alexjover.com/blog/write-the-first-vue-js-component-unit-test-in-jest/)
+
+### Resources used:
+  * [https://codesandbox.io/s/k37qyk1okr](https://codesandbox.io/s/k37qyk1okr)
+  * [https://vue-land.js.org/](https://vue-land.js.org/)
+  * [Quasar Framework](https://quasar-framework.org/)
+  * [Vue Test Utils](https://vue-test-utils.vuejs.org/guides/getting-started.html)
+  * [Vue.js.org](https://vuejs.org/)
+  * [Vue-TDD-MyToDo repo in github](https://github.com/Johnny2136/TDD-ToDo)
+
+Continuing to work on groking TDD with JEST!
+
+After going back to the passing tests I get:
+
+```shell
+import Vue from "vue";
+import App from "..//App";
+
+describe("App.test.js", () => {
+  let cmp, vm;
+
+  beforeEach(() => {
+    cmp = Vue.extend(App); // Create a copy of the original component
+    vm = new cmp({
+      data: {
+        // Replace data value with this fake data
+        messages: ["Cat"]
+      }
+    }).$mount(); // Instances and mounts the component
+  });
+
+  it('equals messages to ["Cat"]', () => {
+    expect(vm.messages).toEqual(["Cat"]);
+  });
+});
+```
+I then ran this test and it passed:
+
+
+```shell
+<template>
+    <ul>
+        <li v-for="message in messages">
+            {{ message }}
+        </li>
+    </ul>
+</template>
+
+<script>
+export default {
+  name: 'list',
+  props: ['messages']
+}
+</script>
+```
+
+So finally working out some JEST tests and continue with my TDD exploration.
+
+  ![passing tests](https://raw.githubusercontent.com/Johnny2136/johnny2136.github.io/master/images/Jest_Test%20_SandBox.png)
+
+Continue troubleshooting unit testing and then code to make tests pass, using TDD.
+
+**Link(s) to work**
+
+1. Working on learning VUE-TDD application.
+
+Code is at [Vue-TDD-ToDo repo in github](https://github.com/Johnny2136/TDD-ToDo).
+
 ![Friday](https://raw.githubusercontent.com/Johnny2136/johnny2136.github.io/master/images/Sometimes-You-Punt.png)
 
 ### Day 94: October 26, Friday
