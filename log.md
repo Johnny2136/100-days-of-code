@@ -1,5 +1,34 @@
 # 100 Days Of Code - Log
 
+![Sunday](http://oneurope.co.uk/wp/wp-content/uploads/2018/02/5-happy-sunday-quotes.jpg)
+
+### Day 96: October 28, Sunday
+
+**Today 's Progress** Trying to figure out how to do TDD.
+
+**Thoughts** Read through [Vue Test Utils](https://vue-test-utils.vuejs.org/guides/getting-started.html)... Light Day.
+
+### Resources used:
+  * [Write the first Vue.js Component Unit Test in Jest](https://alexjover.com/blog/write-the-first-vue-js-component-unit-test-in-jest/)
+  * [https://codesandbox.io/s/k37qyk1okr](https://codesandbox.io/s/k37qyk1okr)
+  * [https://vue-land.js.org/](https://vue-land.js.org/)
+  * [Quasar Framework](https://quasar-framework.org/)
+  * [Vue Test Utils](https://vue-test-utils.vuejs.org/guides/getting-started.html)
+  * [Vue.js.org](https://vuejs.org/)
+  * [Vue-TDD-MyToDo repo in github](https://github.com/Johnny2136/TDD-ToDo)
+
+Continuing to work on groking TDD with JEST!
+
+  ![Vue Testing Video](https://www.youtube.com/watch?v=d2QKTNmU-Tc&t=202s)
+
+Continue learning unit testing and using TDD.
+
+**Link(s) to work**
+
+1. Working on learning VUE-TDD application.
+
+Code is at [Vue-TDD-ToDo repo in github](https://github.com/Johnny2136/TDD-ToDo).
+
 ![Saturday](https://raw.githubusercontent.com/Johnny2136/johnny2136.github.io/master/images/CodeSanboxJest.png)
 
 ## Day 95: October 27, Saturday
