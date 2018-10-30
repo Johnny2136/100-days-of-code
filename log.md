@@ -1,5 +1,35 @@
 # 100 Days Of Code - Log
 
+![monday](https://dehayf5mhw1h7.cloudfront.net/wp-content/uploads/sites/600/2017/12/04105728/mondays.jpg)
+
+## Day 96: October 28, Sunday
+
+**Today 's Progress** Took a break from TDD and did a Kata on Code wars [CodeWars Disemvowel Trolls](https://www.codewars.com/kata/disemvowel-trolls/javascript).
+
+**Thoughts** Had to take a break from TDD its making my head hurt...
+
+### Resources used:
+  * [Write the first Vue.js Component Unit Test in Jest](https://alexjover.com/blog/write-the-first-vue-js-component-unit-test-in-jest/)
+  * [https://codesandbox.io/s/k37qyk1okr](https://codesandbox.io/s/k37qyk1okr)
+  * [https://vue-land.js.org/](https://vue-land.js.org/)
+  * [Quasar Framework](https://quasar-framework.org/)
+  * [Vue Test Utils](https://vue-test-utils.vuejs.org/guides/getting-started.html)
+  * [Vue.js.org](https://vuejs.org/)
+  * [Vue-TDD-MyToDo repo in github](https://github.com/Johnny2136/TDD-ToDo)
+
+Continuing to work on groking TDD with JEST!
+
+  [CodeWars](https://www.codewars.com/users/Johnny2136)
+
+Continue learning unit testing and using TDD.
+
+**Link(s) to work**
+
+1. Working on learning VUE-TDD application.
+
+Code is at [Vue-TDD-ToDo repo in github](https://github.com/Johnny2136/TDD-ToDo).
+
+
 ![Sunday](http://oneurope.co.uk/wp/wp-content/uploads/2018/02/5-happy-sunday-quotes.jpg)
 
 ### Day 96: October 28, Sunday
