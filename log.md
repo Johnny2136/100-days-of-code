@@ -2,7 +2,7 @@
 
 ![monday](https://dehayf5mhw1h7.cloudfront.net/wp-content/uploads/sites/600/2017/12/04105728/mondays.jpg)
 
-## Day 96: October 28, Sunday
+## Day 97: October 29, Monday
 
 **Today 's Progress** Took a break from TDD and did a Kata on Code wars [CodeWars Disemvowel Trolls](https://www.codewars.com/kata/disemvowel-trolls/javascript).
 
