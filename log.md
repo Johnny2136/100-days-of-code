@@ -1,5 +1,108 @@
 # 100 Days Of Code - Log
 
+![Wed](https://raw.githubusercontent.com/Johnny2136/johnny2136.github.io/master/images/D3.js_Day_99.png)
+
+### Day 99: October 31, Wednesday
+
+**Today 's Progress** Still on my break from TDD and did a couple D3.js challenges on FreeCodeCamp [Data Visualization with D3: Invert SVG Elements](https://learn.freecodecamp.org/data-visualization/data-visualization-with-d3/invert-svg-elements).
+
+**Thoughts** Had to take a break from TDD its making my head hurt...
+
+### Resources used:
+
+* [D3.js Tutorial: Building Interactive Bar Charts with JavaScript](https://blog.risingstack.com/d3-js-tutorial-bar-charts-with-javascript/)
+* [D3 Tutorial](https://www.dashingd3js.com/table-of-contents)
+* [D3 in Depth](https://d3indepth.com/)
+
+#### Invert SVG Elements
+**Example:** The y coordinate that is y = heightOfSVG - heightOfBar would place the bars right-side-up.
+
+**Challenge Instructions:** Change the callback function for the y attribute to set the bars right-side-up. Remember that the height of the bar is 3 times the data value d.
+
+*Note* In general, the relationship is y = h - m * d, where m is the constant that scales the data points.
+
+Resources:
+
+**My solution**
+```html
+<body>
+  <script>
+    const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];
+
+    const w = 500;
+    const h = 100;
+
+    const svg = d3.select("body")
+                  .append("svg")
+                  .attr("width", w)
+                  .attr("height", h);
+
+    svg.selectAll("rect")
+       .data(dataset)
+       .enter()
+       .append("rect")
+       .attr("x", (d, i) => i * 30)
+       .attr("y", (d, i) => {
+         // Add your code below this line
+
+         return h-3*d;
+
+         // Add your code above this line
+       })
+       .attr("width", 25)
+       .attr("height", (d, i) => 3 * d);
+  </script>
+</body>
+```
+#### Change the Color of an SVG Element
+**Example:** In SVG, a rect shape is colored with the fill attribute. It supports hex codes, color names, and rgb values, as well as more complex options like gradients and transparency. (not a good example!!!)
+
+**Challenge Instructions:** Add an attr() method to set the "fill" of all the bars to the color "navy".
+
+Resources:
+
+**My solution**
+```html
+<body>
+  <script>
+    const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];
+
+    const w = 500;
+    const h = 100;
+
+    const svg = d3.select("body")
+                  .append("svg")
+                  .attr("width", w)
+                  .attr("height", h);
+
+    svg.selectAll("rect")
+       .data(dataset)
+       .enter()
+       .append("rect")
+       .attr("x", (d, i) => i * 30)
+       .attr("y", (d, i) => h - 3 * d)
+       .attr("width", 25)
+       .attr("height", (d, i) => 3 * d)
+       // Add your code below this line
+
+       .attr("fill","navy");       
+
+       // Add your code above this line
+  </script>
+</body>
+```
+
+**Link(s) to work**
+
+1. Working on learning VUE-TDD application.
+
+  * PassedInvert SVG Elements
+  * PassedChange the Color of an SVG Element
+  * PassedAdd Labels to D3 Elements
+  * PassedStyle D3 Labels
+
+Code is at [Data Visualization with D3](https://github.com/Johnny2136/FCC-Projects/blob/master/FCC_Challenges/DataVisualizationWithD3.md).
+
 ![Tuesday](https://raw.githubusercontent.com/Johnny2136/johnny2136.github.io/master/images/FCC_D3.png)
 
 ## Day 98: October 30, Tuesday
