@@ -1,5 +1,137 @@
 # 100 Days Of Code - Log
 
+![Thur](https://cloud.lovin.ie/images/_blogWide/party-gif.gif?mtime=20161201161524)
+
+### Day 100: November 1, Thursday
+
+**Today 's Progress** Finished my #100DaysOfCode Challenge with a couple D3.js challenges on FreeCodeCamp [Data Visualization with D3: Create a Linear Scale with D3](https://learn.freecodecamp.org/data-visualization/data-visualization-with-d3/create-a-linear-scale-with-d3/).
+
+**Final Thoughts** Its been a hard 100 days but let me see if I can summarize: This journey started on July 25th of this year, I felt like I had to keep my coding skills up to date, since project management doesn't allow for hands on coding. After the failed whiteboarding interview with USDS I threw myself into coding on my free time as much as possible. Free Code Camp offered a great way to reinforce what I learned in college about wed development and working though the challenges was actually fun, until REACT :) React.js was tough, then came TDD with Jest and VUE.js a whole new thing for me, I still struggle with it a lot. But I learned a lot during this 100 days! Advances in JavaScript, Became a SME on CICD/ and Open Shift. I also earned certificates in [JavaScript Algorithms and Data Structures](https://www.freecodecamp.org/certification/johnny2136/javascript-algorithms-and-data-structures) and [Front End Libraries](https://www.freecodecamp.org/certification/johnny2136/front-end-libraries). My GitHub profile sows over 100 days of straight contributions here https://github.com/Johnny2136, my blog here: https://johnny2136.github.io/ Documents my thoughts and activities as well as my Log on the 100 days challenges. I found some awesome new developers working their way through [CodeClan](https://codeclan.com/) in Scotland, and following their journeys as they begin learning to code. I started supporting more diversity in STEM positions by promoting programs supporting getting more women and girls interested in STEM. I learned to use VSCode IDE and Atom, as well as Code Pen, Code Sandbox, JS fiddle, and cloud9 IDE. I plan on taking some time off and relaxing a bit, but also I plan on carrying on with my studies on TDD and doing my code projects to keep up with modern coding techniques. Its been a real challenge, the day after Oral surgery the last thing I wanted to do was code but I did it! It feels good to have seen this challenge through now on to the next steps. 
+
+### Resources used:
+
+* [D3.js Tutorial: Building Interactive Bar Charts with JavaScript](https://blog.risingstack.com/d3-js-tutorial-bar-charts-with-javascript/)
+* [D3 Tutorial](https://www.dashingd3js.com/table-of-contents)
+* [D3 in Depth](https://d3indepth.com/)
+
+#### Add Labels to Scatter Plot Circles
+
+**Example:**
+You can add text to create labels for the points in a scatter plot.
+
+The goal is to display the comma-separated values for the first (x) and second (y) fields of each item in dataset.
+
+The text nodes need x and y attributes to position it on the SVG canvas. In this challenge, the y value (which determines height) can use the same value that the circle uses for its cy attribute. The x value can be slightly larger than the cx value of the circle, so the label is visible. This will push the label to the right of the plotted point.
+
+**Challenge Instructions:**
+Label each point on the scatter plot using the text elements. The text of the label should be the two values separated by a comma and a space. For example, the label for the first point is "34, 78". Set the x attribute so it's 5 units more than the value you used for the cx attribute on the circle. Set the y attribute the same way that's used for the cy value on the circle.
+
+*Resources:*
+https://stackoverflow.com/questions/36954426/adding-label-on-a-d3-scatter-plot-circles
+
+**My solution**
+```html
+<body>
+  <script>
+    const dataset = [
+                  [ 34,    78 ],
+                  [ 109,   280 ],
+                  [ 310,   120 ],
+                  [ 79,    411 ],
+                  [ 420,   220 ],
+                  [ 233,   145 ],
+                  [ 333,   96 ],
+                  [ 222,   333 ],
+                  [ 78,    320 ],
+                  [ 21,    123 ]
+                ];
+    
+    
+    const w = 500;
+    const h = 500;
+    
+    const svg = d3.select("body")
+                  .append("svg")
+                  .attr("width", w)
+                  .attr("height", h);
+    
+    svg.selectAll("circle")
+       .data(dataset)
+       .enter()
+       .append("circle")
+       .attr("cx", (d, i) => d[0])
+       .attr("cy", (d, i) => h - d[1])
+       .attr("r", 5);
+    
+    svg.selectAll("text")
+       .data(dataset)
+       .enter()
+       .append("text")
+       // Add your code below this line
+       
+       .text((d) => (d[0] + ", " + d[1]))
+       .attr("x", (d) => (d[0] + 5))
+       .attr("y", (d) => (h - d[1]));  
+       
+       // Add your code above this line
+  </script>
+</body>
+```
+
+#### Create a Linear Scale with D3
+**Example:**
+The bar and scatter plot charts both plotted data directly onto the SVG canvas. However, if the height of a bar or one of the data points were larger than the SVG height or width values, it would go outside the SVG area.
+
+In D3, there are scales to help plot data. Scales are functions that tell the program how to map a set of raw data points onto the pixels of the SVG canvas.
+
+For example, say you have a 100x500-sized SVG canvas and you want to plot Gross Domestic Product (GDP) for a number of countries. The set of numbers would be in the billion or trillion-dollar range. You provide D3 a type of scale to tell it how to place the large GDP values into that 100x500-sized area.
+
+It's unlikely you would plot raw data as-is. Before plotting it, you set the scale for your entire data set, so that the x and y values fit your canvas width and height.
+
+D3 has several scale types. For a linear scale (usually used with quantitative data), there is the D3 method scaleLinear():
+
+`const scale = d3.scaleLinear()`
+
+By default, a scale uses the identity relationship. The value of the input is the same as the value of the output. A separate challenge covers how to change this.
+
+**Challange Instructions:**
+Change the scale variable to create a linear scale. Then set the output variable to the scale called with an input argument of 50.
+
+*Resources:*
+
+**My solution**
+```html
+<body>
+  <script>
+    // Add your code below this line
+    
+    const scale = d3.scaleLinear() // Create the scale here
+    const output = scale(50); // Call the scale with an argument here
+    
+    // Add your code above this line
+    
+    d3.select("body")
+      .append("h2")
+      .text(output);
+  
+  </script>
+</body>
+```
+
+**Link(s) to work**
+
+1. Working on learning VUE-TDD application.
+
+  * Add a Hover Effect to a D3 Element
+  * PassedAdd a Tooltip to a D3 Element
+  * PassedCreate a Scatterplot with SVG Circles
+  * PassedAdd Attributes to the Circle Elements
+  * PassedAdd Labels to Scatter Plot Circles
+  * PassedCreate a Linear Scale with D3
+
+Code is at [Data Visualization with D3](https://github.com/Johnny2136/FCC-Projects/blob/master/FCC_Challenges/DataVisualizationWithD3.md).
+
+
 ![Wed](https://raw.githubusercontent.com/Johnny2136/johnny2136.github.io/master/images/D3.js_Day_99.png)
 
 ### Day 99: October 31, Wednesday
